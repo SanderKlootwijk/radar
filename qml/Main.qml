@@ -12,8 +12,8 @@ MainView {
   applicationName: 'radar.sanderklootwijk'
   automaticOrientation: true
 
-  width: units.gu(45)
-  height: units.gu(75)
+  width: units.gu(55)
+  height: units.gu(85)
 
   Image {
     id: testImg
@@ -116,29 +116,270 @@ MainView {
     id: settingsPage
   }
 
+  Rectangle {
+    z: 10
+    id: panel
+    width: units.gu(10)
+    height: parent.height
+
+    color: theme.palette.normal.background
+
+    visible: {
+      if (root.width > units.gu(50)) {
+        if (settings.firstRun == "true") {
+          false
+        }
+        else if (settingsPage.visible == true) {
+          false
+        }
+        else {
+          true
+        }
+      }
+      else {
+        false
+      }
+    }
+
+    anchors {
+      left: parent.left
+      verticalCenter: parent.verticalCenter
+    }
+
+    Rectangle {
+      width: units.gu(0.1)
+      height: parent.height - header.height + units.gu(0.1)
+
+      anchors {
+        right: parent.right
+        bottom: parent.bottom
+      }
+
+      color: {
+        if (Theme.name == "Ubuntu.Components.Themes.SuruDark") {
+          "#5d5d5d"
+        }
+        else {
+          "#cdcdcd"
+        }
+      }
+    }
+
+    Column {
+      id: iconColumn
+      spacing: parent.height / 9
+
+      anchors {
+        fill: parent
+        topMargin: header.height
+      }
+
+      Rectangle {
+        color: theme.palette.normal.background
+        width: parent.width - units.gu(0.1)
+        height: 0.0000000000000001
+      }
+
+      Rectangle {
+        color: theme.palette.normal.background
+        width: parent.width - units.gu(0.1)
+        height: width / 1.6
+
+        Icon {
+          width: parent.width - units.gu(6.5)
+          height: width
+
+          anchors {
+            top: parent.top
+            horizontalCenter: parent.horizontalCenter
+          }
+
+          name: "calendar-today"
+
+          color: theme.palette.normal.baseText
+        }
+
+        Label {
+          anchors {
+            bottom: parent.bottom
+            horizontalCenter: parent.horizontalCenter
+          }
+
+          text: "Vandaag"
+        }
+
+        MouseArea {
+          anchors.fill: parent
+          onClicked: {
+            sections.selectedIndex = 0
+          }
+        }
+      }
+
+      Rectangle {
+        color: theme.palette.normal.background
+        width: parent.width - units.gu(0.1)
+        height: width / 1.2
+
+        Icon {
+          width: parent.width - units.gu(6.5)
+          height: width
+
+          anchors {
+            top: parent.top
+            horizontalCenter: parent.horizontalCenter
+          }
+
+          name: "calendar"
+
+          color: theme.palette.normal.baseText
+        }
+
+        Label {
+          anchors {
+            bottom: parent.bottom
+            horizontalCenter: parent.horizontalCenter
+          }
+
+          text: "Komende\ndagen"
+
+          horizontalAlignment: Text.AlignHCenter
+        }
+
+        MouseArea {
+          anchors.fill: parent
+          onClicked: {
+            sections.selectedIndex = 1
+          }
+        }
+      }
+
+      Rectangle {
+        color: theme.palette.normal.background
+        width: parent.width - units.gu(0.1)
+        height: width / 1.6
+
+        Icon {
+          width: parent.width - units.gu(6.5)
+          height: width
+
+          anchors {
+            top: parent.top
+            horizontalCenter: parent.horizontalCenter
+          }
+
+          source: "img/radars.svg"
+
+          color: theme.palette.normal.baseText
+        }
+
+        Label {
+          anchors {
+            bottom: parent.bottom
+            horizontalCenter: parent.horizontalCenter
+          }
+
+          text: "Radars"
+        }
+
+        MouseArea {
+          anchors.fill: parent
+          onClicked: {
+            sections.selectedIndex = 2
+          }
+        }
+      }
+
+      Rectangle {
+        color: theme.palette.normal.background
+        width: parent.width - units.gu(0.1)
+        height: width / 1.6
+
+        Icon {
+          width: parent.width - units.gu(6.5)
+          height: width
+
+          anchors {
+            top: parent.top
+            horizontalCenter: parent.horizontalCenter
+          }
+
+          name: "stock_website"
+
+          color: theme.palette.normal.baseText
+        }
+
+        Label {
+          anchors {
+            bottom: parent.bottom
+            horizontalCenter: parent.horizontalCenter
+          }
+
+          text: "Kaarten"
+        }
+
+        MouseArea {
+          anchors.fill: parent
+          onClicked: {
+            sections.selectedIndex = 3
+          }
+        }
+      }
+
+    }
+  }
+
   Page {
     id: mainPage
-    anchors.fill: parent
+
+    anchors {
+      verticalCenter: parent.verticalCenter
+      right: parent.right
+    }
 
     header: PageHeader {
       id: header
+
+      width: parent.width
+      height: {
+        if (root.width > units.gu(50)) {
+          units.gu(6)
+        }
+        else {
+          units.gu(10)
+        }
+      }
 
       ListView {
         id: title
         model: xmlModel
         width: parent.width
-        height: header.height - sections.height - header.height / 4.7
+        height: {
+          if (root.width > units.gu(50)) {
+            header.height - units.gu(4)
+          }
+          else {
+            header.height - sections.height - units.gu(4)
+          }
+        }
         anchors {
           top: parent.top
-          topMargin: header.height / 4.7
+          topMargin: units.gu(2)
         }
         delegate: Label {
           id: headerText
           anchors {
             left: parent.left
-            leftMargin: units.gu(2)
+            leftMargin: {
+              if (root.width > units.gu(50)) {
+                units.gu(12)
+              }
+              else {
+                units.gu(2)
+              }
+            }
           }
-          font.pixelSize: header.height / 4.5
+          font.pixelSize: title.height
           text: stationnaam + " - " + temp + " °C"
         }
       }
@@ -214,6 +455,14 @@ MainView {
 
       extension: Sections {
         id: sections
+        visible: {
+          if (root.width > units.gu(50)) {
+            false
+          }
+          else {
+            true
+          }
+        }
         anchors {
           horizontalCenter: parent.horizontalCenter
           bottom: parent.bottom
@@ -261,11 +510,33 @@ MainView {
             fill: parent
           }
 
+          Rectangle {
+            color: "transparent"
+            width: parent.width
+            height: {
+              if (root.width > units.gu(60)) {
+                parent.height / 10
+              }
+              else {
+                0
+              }
+            }
+          }
+
           AnimatedImage {
             id: radar
             z: 1
             height: width
-            width: root.width
+            width: {
+              if (root.width > units.gu(60)) {
+                units.gu(50)
+              }
+              else {
+                parent.width
+              }
+            }
+
+            anchors.horizontalCenter: parent.horizontalCenter
 
             source: "http://api.buienradar.nl/image/1.0/RadarMapNL?w=512&h=512"
 
@@ -326,6 +597,7 @@ MainView {
         color: "transparent"
         width: parent.width
         height: units.gu(10)
+        anchors.left: radar.left
         ListView {
           id: list
           z: 23
@@ -552,7 +824,14 @@ MainView {
         color: theme.palette.normal.baseText
         anchors {
           left: parent.left
-          leftMargin: units.gu(1)
+          leftMargin: {
+            if (root.width > units.gu(90)) {
+              parent.width / 5.6
+            }
+            else {
+              units.gu(1)
+            }
+          }
           verticalCenter: parent.verticalCenter
         }
       }
@@ -563,7 +842,14 @@ MainView {
           leftMargin: units.gu(1)
           top: info.top
         }
-        width: parent.width - units.gu(8);
+        width: {
+          if (root.width > units.gu(90)) {
+            parent.width / 2
+          }
+          else {
+            parent.width - units.gu(8)
+          }
+        }
         height: Text.paintedHeight
         model: xmlModel
         delegate: Text {
@@ -590,17 +876,46 @@ MainView {
     }
 
     Rectangle {
+      id: radarItemRectangle
+      color: "transparent"
+      width: parent.width
+      height: {
+        if (root.width > units.gu(60)) {
+          if (root.height > units.gu(100)) {
+            parent.height / 10
+          }
+          else {
+            units.gu(1)
+          }
+        }
+        else {
+          0
+        }
+      }
+    }
+
+    Rectangle {
       id: radarRectangle
       color: "transparent"
       height: width
-      width: root.width
+      width: {
+        if (root.width > units.gu(60)) {
+          units.gu(50)
+        }
+        else {
+          parent.width
+        }
+      }
 
+      anchors.top: radarItemRectangle.bottom
+      anchors.horizontalCenter: parent.horizontalCenter
 
       AnimatedImage {
         id: nederlandRadar
         z: 1
-        width: parent.width
         height: width
+        width: parent.width
+
         visible: true
 
         source: "http://api.buienradar.nl/image/1.0/RadarMapNL?w=512&h=512"
@@ -622,8 +937,9 @@ MainView {
       AnimatedImage {
         id: europaRadar
         z: 1
-        width: parent.width
         height: width
+        width: parent.width
+
         visible: false
 
         source: "https://api.buienradar.nl/image/1.0/radarmapeu/?ext=gif"
@@ -688,13 +1004,13 @@ MainView {
 
 OptionSelector {
   id: radarSelector
-  width: parent.width - units.gu(2)
-  height: parent.height - radarRectangle.height - units.gu(2)
+  width: radarRectangle.width - units.gu(2)
+  height: parent.height - radarRectangle.height - radarItemRectangle.height - units.gu(2)
   containerHeight: height
   anchors {
     horizontalCenter: parent.horizontalCenter
-    bottom: parent.bottom
-    bottomMargin: units.gu(1)
+    top: radarRectangle.bottom
+    topMargin: units.gu(1)
   }
   expanded: true
   model: ["Radarbeelden","Onweer","Hagel","Motregen","Sneeuw","Satellietbeelden"]
@@ -741,10 +1057,34 @@ Item {
     NumberAnimation {duration: 230; easing.type: Easing.InOutCubic }
   }
 
+  Rectangle {
+    id: kaartenItemRectangle
+    color: "transparent"
+    width: parent.width
+    height: {
+      if (root.width > units.gu(60)) {
+        units.gu(1)
+      }
+      else {
+        0
+      }
+    }
+  }
+
   Image {
     id: kaart
-    width: parent.width
     height: width * 1.2
+    width: {
+      if (root.width > units.gu(60)) {
+        units.gu(50)
+      }
+      else {
+        parent.width
+      }
+    }
+
+    anchors.top: kaartenItemRectangle.bottom
+    anchors.horizontalCenter: parent.horizontalCenter
 
     source: "https://api.buienradar.nl/image/1.0/weathermapnl/?ext=png&width=500&type=temperatuur"
 
@@ -878,7 +1218,7 @@ Item {
 
   OptionSelector {
     id: kaartSelector
-    width: parent.width - units.gu(2)
+    width: kaart.width - units.gu(2)
     containerHeight: height
     anchors {
       horizontalCenter: parent.horizontalCenter
@@ -1027,10 +1367,19 @@ Item {
 
 ListView {
   id: tabView
+
+  width: {
+    if (root.width > units.gu(50)) {
+      root.width - units.gu(10)
+    }
+    else {
+      root.width
+    }
+  }
+
   anchors {
     top: mainPage.header.bottom
     bottom: parent.bottom
-    left: parent.left
     right: parent.right
   }
   model: tabs

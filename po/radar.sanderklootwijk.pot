@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: radar.sanderklootwijk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-06 16:06+0000\n"
+"POT-Creation-Date: 2019-06-09 16:33+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,43 +17,43 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../qml/Main.qml:162
+#: ../qml/Main.qml:403
 msgid "Locatie"
 msgstr ""
 
-#: ../qml/Main.qml:206
+#: ../qml/Main.qml:447
 msgid "Over"
 msgstr ""
 
-#: ../qml/Main.qml:224
+#: ../qml/Main.qml:473
 msgid "Vandaag"
 msgstr ""
 
-#: ../qml/Main.qml:227
+#: ../qml/Main.qml:476
 msgid "Komende dagen"
 msgstr ""
 
-#: ../qml/Main.qml:230
+#: ../qml/Main.qml:479
 msgid "Radars"
 msgstr ""
 
-#: ../qml/Main.qml:233
+#: ../qml/Main.qml:482
 msgid "Kaarten"
 msgstr ""
 
-#: ../qml/Main.qml:309
+#: ../qml/Main.qml:580
 msgid "+2 uur"
 msgstr ""
 
-#: ../qml/Main.qml:309
+#: ../qml/Main.qml:580
 msgid "+24 uur"
 msgstr ""
 
-#: ../qml/Main.qml:672
+#: ../qml/Main.qml:988
 msgid "Nederland"
 msgstr ""
 
-#: ../qml/Main.qml:672
+#: ../qml/Main.qml:988
 msgid "Europa"
 msgstr ""
 
