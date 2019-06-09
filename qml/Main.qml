@@ -125,7 +125,7 @@ MainView {
     color: theme.palette.normal.background
 
     visible: {
-      if (root.width > units.gu(50)) {
+      if (root.width > units.gu(60)) {
         if (settings.firstRun == "true") {
           false
         }
@@ -342,7 +342,7 @@ MainView {
 
       width: parent.width
       height: {
-        if (root.width > units.gu(50)) {
+        if (root.width > units.gu(60)) {
           units.gu(6)
         }
         else {
@@ -355,7 +355,7 @@ MainView {
         model: xmlModel
         width: parent.width
         height: {
-          if (root.width > units.gu(50)) {
+          if (root.width > units.gu(60)) {
             header.height - units.gu(4)
           }
           else {
@@ -371,7 +371,7 @@ MainView {
           anchors {
             left: parent.left
             leftMargin: {
-              if (root.width > units.gu(50)) {
+              if (root.width > units.gu(60)) {
                 units.gu(12)
               }
               else {
@@ -456,7 +456,7 @@ MainView {
       extension: Sections {
         id: sections
         visible: {
-          if (root.width > units.gu(50)) {
+          if (root.width > units.gu(60)) {
             false
           }
           else {
@@ -1369,7 +1369,7 @@ ListView {
   id: tabView
 
   width: {
-    if (root.width > units.gu(50)) {
+    if (root.width > units.gu(60)) {
       root.width - units.gu(10)
     }
     else {
