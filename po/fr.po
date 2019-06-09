@@ -1,0 +1,66 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the radar.sanderklootwijk package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: radar.sanderklootwijk\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-06-09 16:50+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../qml/Main.qml:403
+msgid "Locatie"
+msgstr "Emplacement"
+
+#: ../qml/Main.qml:447
+msgid "Over"
+msgstr "Sur"
+
+#: ../qml/Main.qml:473
+msgid "Vandaag"
+msgstr "Aujourd'hui"
+
+#: ../qml/Main.qml:476
+msgid "Komende dagen"
+msgstr "Jours à venir"
+
+#: ../qml/Main.qml:479
+msgid "Radars"
+msgstr "Radars"
+
+#: ../qml/Main.qml:482
+msgid "Kaarten"
+msgstr "Carte"
+
+#: ../qml/Main.qml:580
+msgid "+2 uur"
+msgstr "+2 heures"
+
+#: ../qml/Main.qml:580
+msgid "+24 uur"
+msgstr "+24 heures"
+
+#: ../qml/Main.qml:988
+msgid "Nederland"
+msgstr "Pays-Bas"
+
+#: ../qml/Main.qml:988
+msgid "Europa"
+msgstr "Europe"
+
+#: ../qml/SettingsPage.qml:28
+msgid "Sluiten"
+msgstr "Fermer"
+
+#: radar.desktop.in.h:1
+msgid "Radar"
+msgstr "Radar"
