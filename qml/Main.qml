@@ -12,7 +12,7 @@ MainView {
   applicationName: 'radar.sanderklootwijk'
   automaticOrientation: true
 
-  width: units.gu(55)
+  width: units.gu(75)
   height: units.gu(85)
 
   Image {
@@ -167,7 +167,14 @@ MainView {
 
     Column {
       id: iconColumn
-      spacing: parent.height / 9
+      spacing: {
+        if (parent.height < units.gu(60)) {
+          parent.height / 15
+        }
+        else {
+          parent.height / 9
+        }
+      }
 
       anchors {
         fill: parent
@@ -205,7 +212,7 @@ MainView {
             horizontalCenter: parent.horizontalCenter
           }
 
-          text: "Vandaag"
+          text: i18n.tr("Vandaag")
         }
 
         MouseArea {
@@ -241,7 +248,7 @@ MainView {
             horizontalCenter: parent.horizontalCenter
           }
 
-          text: "Komende\ndagen"
+          text: i18n.tr("Komende\ndagen")
 
           horizontalAlignment: Text.AlignHCenter
         }
@@ -279,7 +286,7 @@ MainView {
             horizontalCenter: parent.horizontalCenter
           }
 
-          text: "Radars"
+          text: i18n.tr("Radars")
         }
 
         MouseArea {
@@ -315,7 +322,7 @@ MainView {
             horizontalCenter: parent.horizontalCenter
           }
 
-          text: "Kaarten"
+          text: i18n.tr("Kaarten")
         }
 
         MouseArea {
@@ -410,11 +417,11 @@ MainView {
         Action {
           text: {
             if (settings.theme == "Ambiance"){
-              "Nachtmodus"
+              i18n.tr("Nachtmodus")
 
             }
             else {
-              "Dagmodus"
+              i18n.tr("Dagmodus")
             }
           }
           iconSource: {
@@ -609,7 +616,7 @@ MainView {
             id: text
             width: parent.width
             textFormat: Text.StyledText
-            text:  '<p><b><font color="' + theme.palette.normal.baseText + '">Huidig weer</font></b></p><font color="' + theme.palette.normal.baseText + '">Het is </font><font color="#19b6ee">' + temp + 'ºC</font><font color="' + theme.palette.normal.baseText + '"> (' + stationnaam + ')' + '<br>De luchtvochtigheid is </font><font color="#19b6ee">' + luchtvochtigheid + '%</font>' + '<font color="' + theme.palette.normal.baseText + '"><br>De wind komt uit het </font><font color="#19b6ee">' + wind + '</font><font color="' + theme.palette.normal.baseText + '"> en heeft <br> een snelheid van </font><font color="#19b6ee">' + windms + ' m/s</font>' + '</p><p>' + '&nbsp;<br>&nbsp;'
+            text:  '<p><b><font color="' + theme.palette.normal.baseText + '">' + i18n.tr('Huidig weer') + '</font></b></p><font color="' + theme.palette.normal.baseText + '">' + i18n.tr('Het is') + ' </font><font color="#19b6ee">' + temp + 'ºC</font><font color="' + theme.palette.normal.baseText + '"> (' + stationnaam + ')' + '<br>' + i18n.tr('De luchtvochtigheid is') + ' </font><font color="#19b6ee">' + luchtvochtigheid + '%</font>' + '<font color="' + theme.palette.normal.baseText + '"><br>' + i18n.tr('De wind komt uit het') + ' </font><font color="#19b6ee">' + wind + '</font><font color="' + theme.palette.normal.baseText + '"> ' + i18n.tr('en heeft') + ' <br> ' + i18n.tr('een snelheid van') + ' </font><font color="#19b6ee">' + windms + ' m/s</font>' + '</p><p>' + '&nbsp;<br>&nbsp;'
             wrapMode: Text.WordWrap
           }
         }
@@ -725,7 +732,7 @@ MainView {
               width: parent.width
               textFormat: Text.StyledText
               font.pointSize: units.gu(1.5)
-              text:  '<p><font color="#19b6ee">Dag</font></p><p>&nbsp;</p><font color="' + theme.palette.normal.baseText + '">' + morgen + '<p>&nbsp;</p><p>' + overmorgen +  '<p>&nbsp;</p><p>' + overovermorgen + '<p>&nbsp;</p><p>' + overoverovermorgen + '<p>&nbsp;</p><p>' + overoveroverovermorgen + '</font><p>&nbsp;</p>'
+              text:  '<p><font color="#19b6ee">' + i18n.tr('Dag') + '</font></p><p>&nbsp;</p><font color="' + theme.palette.normal.baseText + '">' + morgen + '<p>&nbsp;</p><p>' + overmorgen +  '<p>&nbsp;</p><p>' + overovermorgen + '<p>&nbsp;</p><p>' + overoverovermorgen + '<p>&nbsp;</p><p>' + overoveroverovermorgen + '</font><p>&nbsp;</p>'
               wrapMode: Text.WordWrap
             }
           }
@@ -750,7 +757,7 @@ MainView {
               width: parent.width
               textFormat: Text.StyledText
               font.pointSize: units.gu(1.5)
-              text:  '<p><font color="#19b6ee">Max</font></p><p>&nbsp;</p><font color="' + theme.palette.normal.baseText + '">' + tempmorgenmax + '<p>&nbsp;</p><p>' + tempovermorgenmax +  '<p>&nbsp;</p><p>' + tempoverovermorgenmax + '<p>&nbsp;</p><p>' + tempoveroverovermorgenmax + '<p>&nbsp;</p><p>' + tempoveroveroverovermorgenmax + '</font><p>&nbsp;</p>'
+              text:  '<p><font color="#19b6ee">' + i18n.tr('Max') + '</font></p><p>&nbsp;</p><font color="' + theme.palette.normal.baseText + '">' + tempmorgenmax + '<p>&nbsp;</p><p>' + tempovermorgenmax +  '<p>&nbsp;</p><p>' + tempoverovermorgenmax + '<p>&nbsp;</p><p>' + tempoveroverovermorgenmax + '<p>&nbsp;</p><p>' + tempoveroveroverovermorgenmax + '</font><p>&nbsp;</p>'
               wrapMode: Text.WordWrap
             }
           }
@@ -775,7 +782,7 @@ MainView {
               width: parent.width
               textFormat: Text.StyledText
               font.pointSize: units.gu(1.5)
-              text:  '<p><font color="#19b6ee">Min</font></p><p>&nbsp;</p><font color="' + theme.palette.normal.baseText + '">' + tempmorgenmin + '<p>&nbsp;</p><p>' + tempovermorgenmin +  '<p>&nbsp;</p><p>' + tempoverovermorgenmin + '<p>&nbsp;</p><p>' + tempoveroverovermorgenmin + '<p>&nbsp;</p><p>' + tempoveroveroverovermorgenmin + '</font><p>&nbsp;</p>'
+              text:  '<p><font color="#19b6ee">' + i18n.tr('Min') + '</font></p><p>&nbsp;</p><font color="' + theme.palette.normal.baseText + '">' + tempmorgenmin + '<p>&nbsp;</p><p>' + tempovermorgenmin +  '<p>&nbsp;</p><p>' + tempoverovermorgenmin + '<p>&nbsp;</p><p>' + tempoveroverovermorgenmin + '<p>&nbsp;</p><p>' + tempoveroveroverovermorgenmin + '</font><p>&nbsp;</p>'
               wrapMode: Text.WordWrap
             }
           }
@@ -800,7 +807,7 @@ MainView {
               width: parent.width
               textFormat: Text.StyledText
               font.pointSize: units.gu(1.5)
-              text:  '<p><font color="#19b6ee">Neerslag</font></p><p>&nbsp;</p><font color="' + theme.palette.normal.baseText + '">' + kansregenmorgen + '%<p>&nbsp;</p><p>' + kansregenovermorgen +  '%<p>&nbsp;</p><p>' + kansregenoverovermorgen + '%<p>&nbsp;</p><p>' + kansregenoveroverovermorgen + '%<p>&nbsp;</p><p>' + kansregenoveroveroverovermorgen + '%</font><p>&nbsp;</p>'
+              text:  '<p><font color="#19b6ee">' + i18n.tr('Neerslag') + '</font></p><p>&nbsp;</p><font color="' + theme.palette.normal.baseText + '">' + kansregenmorgen + '%<p>&nbsp;</p><p>' + kansregenovermorgen +  '%<p>&nbsp;</p><p>' + kansregenoverovermorgen + '%<p>&nbsp;</p><p>' + kansregenoveroverovermorgen + '%<p>&nbsp;</p><p>' + kansregenoveroveroverovermorgen + '%</font><p>&nbsp;</p>'
               wrapMode: Text.WordWrap
             }
           }
@@ -953,7 +960,7 @@ MainView {
 
           Label {
             anchors.centerIn: parent
-            text: "Deze radar is helaas niet beschikbaar voor Europa"
+            text: i18n.tr("Deze radar is helaas niet beschikbaar voor Europa")
             textSize: Label.Medium
           }
         }
@@ -1013,7 +1020,7 @@ OptionSelector {
     topMargin: units.gu(1)
   }
   expanded: true
-  model: ["Radarbeelden","Onweer","Hagel","Motregen","Sneeuw","Satellietbeelden"]
+  model: [i18n.tr("Radarbeelden"),i18n.tr("Onweer"),i18n.tr("Hagel"),i18n.tr("Motregen"),i18n.tr("Sneeuw"),i18n.tr("Satellietbeelden")]
   onSelectedIndexChanged: {
     switch(radarSelector.selectedIndex) {
     case 0:
@@ -1141,7 +1148,7 @@ Item {
     Button {
       id: legendaButton
       color: "#19b6ee"
-      text: "Legenda"
+      text: i18n.tr("Legenda")
       visible: {
         if (kaart.status == 1) {
           true
@@ -1228,7 +1235,7 @@ Item {
       topMargin: units.gu(1)
     }
     expanded: true
-    model: ["Actuele temperatuur","Gevoelstemperatuur","Grondtemperatuur","Minimum grondtemperatuur","Minimumtemperatuur","Maximumtemperatuur","Actuele wind","Maximale wind","Actuele windstoten","Zwaarste windstoten","Neerslag afgelopen uur","Dagelijkse neerslagsom","Totaal aantal zonuren","Zicht en mist","Luchtvochtigheid","Luchtkwaliteitsindex","Actuele ozon","Actuele stikstofdioxide","Actuele fijnstof","Pollen en hooikoorts","Muggenradar"]
+    model: [i18n.tr("Actuele temperatuur"),i18n.tr("Gevoelstemperatuur"),i18n.tr("Grondtemperatuur"),i18n.tr("Minimum grondtemperatuur"),i18n.tr("Minimumtemperatuur"),i18n.tr("Maximumtemperatuur"),i18n.tr("Actuele wind"),i18n.tr("Maximale wind"),i18n.tr("Actuele windstoten"),i18n.tr("Zwaarste windstoten"),i18n.tr("Neerslag afgelopen uur"),i18n.tr("Dagelijkse neerslagsom"),i18n.tr("Totaal aantal zonuren"),i18n.tr("Zicht en mist"),i18n.tr("Luchtvochtigheid"),i18n.tr("Luchtkwaliteitsindex"),i18n.tr("Actuele ozon"),i18n.tr("Actuele stikstofdioxide"),i18n.tr("Actuele fijnstof"),i18n.tr("Pollen en hooikoorts"),i18n.tr("Muggenradar")]
     onSelectedIndexChanged: {
       switch(kaartSelector.selectedIndex) {
       case 0:

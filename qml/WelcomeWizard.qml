@@ -32,7 +32,7 @@ Page {
 
     Label {
       id: introductieText
-      text: "Welkom bij Radar!"
+      text: i18n.tr("Welkom bij Radar!")
       textSize: Label.XLarge
       height: contentHeight
       anchors.centerIn: parent
@@ -40,7 +40,7 @@ Page {
 
     Label {
       id: infoText
-      text: "Radar geeft duidelijke en betrouwbare weersinfo zodat je droog en voorbereid op pad gaat!\n\nIn één oogopslag zie je of het de komende twee uur gaat regenen. Op deze manier hoef je nooit nat te worden!"
+      text: i18n.tr("Radar geeft duidelijke en betrouwbare weersinfo zodat je droog en voorbereid op pad gaat!\n\nIn één oogopslag zie je of het de komende twee uur gaat regenen. Op deze manier hoef je nooit nat te worden!")
       anchors.left: parent.left
       anchors.right: parent.right
       anchors.margins: units.gu(1)
@@ -52,7 +52,7 @@ Page {
 
     Button {
       color: "#19b6ee"
-      text: "Verder"
+      text: i18n.tr("Verder")
       anchors.top: infoText.bottom
       anchors.topMargin: units.gu(5)
       anchors.horizontalCenter: parent.horizontalCenter
@@ -86,7 +86,7 @@ Page {
 
       Label {
         id: titel
-        text: "Kies een thema"
+        text: i18n.tr("Kies een thema")
         textSize: Label.XLarge
         height: contentHeight
         anchors.top: parent.top
@@ -96,7 +96,7 @@ Page {
 
       Label {
         id: ondertitel
-        text: "Je kunt kiezen tussen een donker\nof een licht thema..."
+        text: i18n.tr("Je kunt kiezen tussen een donker\nof een licht thema...")
         anchors.left: parent.left
         anchors.right: parent.right
         anchors.margins: units.gu(1)
@@ -239,7 +239,7 @@ Page {
       Button {
         id: donker
         color: "#19b6ee"
-        text: "Donker"
+        text: i18n.tr("Donker")
         anchors.bottom: parent.bottom
         anchors.bottomMargin: units.gu(15)
         anchors.left: parent.left
@@ -256,7 +256,7 @@ Page {
       Button {
         id: licht
         color: "#19b6ee"
-        text: "Licht"
+        text: i18n.tr("Licht")
         anchors.bottom: parent.bottom
         anchors.bottomMargin: units.gu(15)
         anchors.right: parent.right
@@ -300,7 +300,7 @@ Page {
 
     Label {
       id: locatieText
-      text: "Locatie"
+      text: i18n.tr("Locatie")
       textSize: Label.XLarge
       height: contentHeight
       anchors.centerIn: parent
@@ -308,7 +308,7 @@ Page {
 
     Label {
       id: locatieOndertitel
-      text: "Je kunt zo meteen via het menu rechtsboven in beeld een meetstation selecteren.\n\nHet standaard meetstation is De Bilt (Regio Utrecht)."
+      text: i18n.tr("Je kunt zo meteen via het menu rechtsboven in beeld een meetstation selecteren.\n\nHet standaard meetstation is De Bilt (Regio Utrecht).")
       anchors.left: parent.left
       anchors.right: parent.right
       anchors.margins: units.gu(1)
@@ -320,7 +320,7 @@ Page {
 
     Button {
       color: "#19b6ee"
-      text: "Verder"
+      text: i18n.tr("Verder")
       anchors.top: locatieOndertitel.bottom
       anchors.topMargin: units.gu(5)
       anchors.horizontalCenter: parent.horizontalCenter
@@ -360,7 +360,7 @@ Page {
 
     Label {
       id: eindeText
-      text: "Je bent helemaal klaar!"
+      text: i18n.tr("Je bent helemaal klaar!")
       textSize: Label.XLarge
       height: contentHeight
       anchors.centerIn: parent
@@ -368,7 +368,7 @@ Page {
 
     Label {
       id: eindeOndertitel
-      text: "Je kunt de instellingen altijd wijzigen via het menu rechtsboven in beeld.\n\nVeel plezier bij het gebruik van Radar!"
+      text: i18n.tr("Je kunt de instellingen altijd wijzigen via het menu rechtsboven in beeld.\n\nVeel plezier bij het gebruik van Radar!")
       anchors.left: parent.left
       anchors.right: parent.right
       anchors.margins: units.gu(1)
@@ -380,7 +380,7 @@ Page {
 
     Button {
       color: "#19b6ee"
-      text: "Sluiten"
+      text: i18n.tr("Sluiten")
       anchors.top: eindeOndertitel.bottom
       anchors.topMargin: units.gu(5)
       anchors.horizontalCenter: parent.horizontalCenter

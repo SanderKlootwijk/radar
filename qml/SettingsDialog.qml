@@ -17,13 +17,13 @@ Component {
       width: parent.width
       wrapMode: Text.Wrap
       horizontalAlignment: Text.AlignHCenter
-      text: "Om de instellingen toe te passen zal de app worden gesloten. U dient de app zelf, handmatig opnieuw te openen."
+      text: i18n.tr("Om de instellingen toe te passen zal de app worden gesloten. U dient de app zelf, handmatig opnieuw te openen.")
     }
 
     Button {
       width: parent.width
       id: toepassen
-      text: "Toepassen"
+      text: i18n.tr("Toepassen")
       color: "#19b6ee"
 
       onClicked: {

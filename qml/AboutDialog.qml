@@ -7,7 +7,7 @@ Component {
   Dialog {
     signal closed();
     id: dialogue
-    title: "Over Radar"
+    title: i18n.tr("Over Radar")
     theme: ThemeSettings {
       name: settings.thema
     }
@@ -29,21 +29,21 @@ Component {
       width: parent.width
       wrapMode: Text.WordWrap
       horizontalAlignment: Text.AlignHCenter
-      text: "<p>Radar geeft duidelijke en betrouwbare weersinfo zodat je droog en voorbereid op pad gaat!</p>&nbsp;<p>Disclaimer: Deze applicatie is zelfstandig ontwikkeld. Alle logo's en namen in deze toepassing zijn handelsmerken van hun respectievelijke eigenaars.</p>"
+      text: "<p>" + i18n.tr("Radar geeft duidelijke en betrouwbare weersinfo zodat je droog en voorbereid op pad gaat!") + "</p>&nbsp;<p>" + i18n.tr("Disclaimer: Deze applicatie is zelfstandig ontwikkeld. Alle logo's en namen in deze toepassing zijn handelsmerken van hun respectievelijke eigenaars.") + "</p>"
     }
 
     Label {
       linkColor: "#19b6ee"
       width: parent.width
       wrapMode: Text.Wrap
-      text: 'Auteur: Sander Klootwijk<br/>Telegram: <a href="https://www.t.me/SanderKlootwijk">@SanderKlootwijk</a><br/>Licentie: <a href="https://www.gnu.org/licenses/gpl.html">GNU GPL v3</a><br/>Broncode: <a href="https://github.com/SanderKlootwijk/Radar">GitHub</a>'
+      text: i18n.tr('Auteur') + ': Sander Klootwijk<br/>Telegram: <a href="https://www.t.me/SanderKlootwijk">@SanderKlootwijk</a><br/>' + i18n.tr('Licentie') + ': <a href="https://www.gnu.org/licenses/gpl.html">GNU GPL v3</a><br/>' + i18n.tr('Broncode') + ': <a href="https://github.com/SanderKlootwijk/Radar">GitHub</a>'
       onLinkActivated: Qt.openUrlExternally(link)
     }
 
     Button {
       width: parent.width
       color: "#19b6ee"
-      text: "Sluiten"
+      text: i18n.tr("Sluiten")
 
       onClicked: {
         PopupUtils.close(dialogue);

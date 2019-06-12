@@ -11,7 +11,7 @@ Page {
 
     Label {
       id: title
-      text: "Instellingen"
+      text: i18n.tr("Instellingen")
       textSize: Label.Large
       anchors.left: actionBar.right
       anchors.verticalCenter: actionBar.verticalCenter
@@ -47,7 +47,7 @@ Page {
     }
     width: parent.width - units.gu(2)
     wrapMode: Text.Wrap
-    text: 'Kies een meetstation uit de lijst, of gebruik de zoekbalk om naar een stad of dorp te zoeken.'
+    text: i18n.tr('Kies een meetstation uit de lijst, of gebruik de zoekbalk om naar een stad of dorp te zoeken.')
   }
 
   TextField {
