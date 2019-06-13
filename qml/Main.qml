@@ -576,7 +576,7 @@ MainView {
 
             OptionSelector {
               id: selector
-              width: units.gu(13)
+              width: units.gu(14)
               anchors {
                 right: parent.right
                 rightMargin: units.gu(1)
@@ -984,7 +984,7 @@ MainView {
     OptionSelector {
       z: 2
       id: areaSelector
-      width: units.gu(15)
+      width: units.gu(16)
       anchors {
         right: radarRectangle.right
         rightMargin: units.gu(1)
