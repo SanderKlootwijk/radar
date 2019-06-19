@@ -1,0 +1,363 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the radar.sanderklootwijk package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: radar.sanderklootwijk\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-06-13 15:35+0000\n"
+"PO-Revision-Date: 2019-06-18 20:14+0000\n"
+"Last-Translator: Anne017 <anneonyme017@openmailbox.org>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../qml/WelcomeWizard.qml:35
+msgid "Welkom bij Radar!"
+msgstr "Bienvenue dans Radar !"
+
+#: ../qml/WelcomeWizard.qml:43
+msgid ""
+"Radar geeft duidelijke en betrouwbare weersinfo zodat je droog en voorbereid "
+"op pad gaat!\n"
+"\n"
+"In één oogopslag zie je of het de komende twee uur gaat regenen. Op deze "
+"manier hoef je nooit nat te worden!"
+msgstr ""
+"Radar vous fournit des informations météorologiques claires et fiables afin que vous soyez "
+"préparé avant de prendre la route !\n"
+"\n"
+"Vous pouvez voir en un clin d'œil s'il va pleuvoir dans les deux prochaines heures. De "
+"cette manière, vous ne serez jamais trempé !"
+
+#: ../qml/WelcomeWizard.qml:55 ../qml/WelcomeWizard.qml:323
+msgid "Verder"
+msgstr "Continuer"
+
+#: ../qml/WelcomeWizard.qml:89
+msgid "Kies een thema"
+msgstr "Choisissez un thème"
+
+#: ../qml/WelcomeWizard.qml:99
+msgid ""
+"Je kunt kiezen tussen een donker\n"
+"of een licht thema..."
+msgstr ""
+"Vous pouvez choisir entre un thème sombre\n"
+"ou un thème clair..."
+
+#: ../qml/WelcomeWizard.qml:242
+msgid "Donker"
+msgstr "Sombre"
+
+#: ../qml/WelcomeWizard.qml:259
+msgid "Licht"
+msgstr "Clair"
+
+#: ../qml/WelcomeWizard.qml:303 ../qml/Main.qml:410
+msgid "Locatie"
+msgstr "Emplacement"
+
+#: ../qml/WelcomeWizard.qml:311
+msgid ""
+"Je kunt zo meteen via het menu rechtsboven in beeld een meetstation "
+"selecteren.\n"
+"\n"
+"Het standaard meetstation is De Bilt (Regio Utrecht)."
+msgstr ""
+"Vous pouvez sélectionner une station de mesure au travers du menu supérieur à droite de "
+"l'écran.\n"
+"\n"
+"La station de mesure par défaut est De Bilt (région d'Utrecht)."
+
+#: ../qml/WelcomeWizard.qml:363
+msgid "Je bent helemaal klaar!"
+msgstr "Vous êtes prêt(e) !"
+
+#: ../qml/WelcomeWizard.qml:371
+msgid ""
+"Je kunt de instellingen altijd wijzigen via het menu rechtsboven in beeld.\n"
+"\n"
+"Veel plezier bij het gebruik van Radar!"
+msgstr ""
+"Vous pouvez changer les paramètres à tout moment au travers du menu supérieur à droite de "
+" l'écran.\n"
+"\n"
+"Amusez-vous en utilisant Radar !"
+
+#: ../qml/WelcomeWizard.qml:383 ../qml/AboutDialog.qml:46
+#: ../qml/SettingsPage.qml:28
+msgid "Sluiten"
+msgstr "Fermer"
+
+#: ../qml/SettingsDialog.qml:20
+msgid ""
+"Om de instellingen toe te passen zal de app worden gesloten. U dient de app "
+"zelf, handmatig opnieuw te openen."
+msgstr ""
+"L'application sera fermée pour appliquer les réglages. Vous devrez réouvrir manuellement "
+"l'application."
+
+#: ../qml/SettingsDialog.qml:26
+msgid "Toepassen"
+msgstr "Appliquer"
+
+#: ../qml/AboutDialog.qml:10
+msgid "Over Radar"
+msgstr "À propos de Radar"
+
+#: ../qml/AboutDialog.qml:32
+msgid ""
+"Radar geeft duidelijke en betrouwbare weersinfo zodat je droog en voorbereid "
+"op pad gaat!"
+msgstr ""
+"Radar vous fournit des informations météorologiques claires et fiables afin que vous soyez "
+"préparé avant de prendre la route !\n"
+
+#: ../qml/AboutDialog.qml:32
+msgid ""
+"Disclaimer: Deze applicatie is zelfstandig ontwikkeld. Alle logo's en namen "
+"in deze toepassing zijn handelsmerken van hun respectievelijke eigenaars."
+msgstr ""
+"Clause de non-responsabilité : Cette application a été développée indépendamment. Tous les logos et les "
+"noms dans cette application sont des marques de leurs propriétaires respectifs."
+
+#: ../qml/AboutDialog.qml:39
+msgid "Auteur"
+msgstr "Auteur"
+
+#: ../qml/AboutDialog.qml:39
+msgid "Licentie"
+msgstr "License"
+
+#: ../qml/AboutDialog.qml:39
+msgid "Broncode"
+msgstr "Code source"
+
+#: ../qml/Main.qml:215 ../qml/Main.qml:480
+msgid "Vandaag"
+msgstr "Aujourd'hui"
+
+#: ../qml/Main.qml:251
+msgid ""
+"Komende\n"
+"dagen"
+msgstr ""
+"Jours\n"
+"à venir"
+
+#: ../qml/Main.qml:289 ../qml/Main.qml:486
+msgid "Radars"
+msgstr "Radars"
+
+#: ../qml/Main.qml:325 ../qml/Main.qml:489
+msgid "Kaarten"
+msgstr "Cartes"
+
+#: ../qml/Main.qml:420
+msgid "Nachtmodus"
+msgstr "Mode nuit"
+
+#: ../qml/Main.qml:424
+msgid "Dagmodus"
+msgstr "Mode jour"
+
+#: ../qml/Main.qml:454
+msgid "Over"
+msgstr "À propos"
+
+#: ../qml/Main.qml:483
+msgid "Komende dagen"
+msgstr "Jours à venir"
+
+#: ../qml/Main.qml:587
+msgid "+2 uur"
+msgstr "+2 heures"
+
+#: ../qml/Main.qml:587
+msgid "+24 uur"
+msgstr "+24 heures"
+
+#: ../qml/Main.qml:619
+msgid "Huidig weer"
+msgstr "Temps actuel"
+
+#: ../qml/Main.qml:619
+msgid "Het is"
+msgstr "Il est"
+
+#: ../qml/Main.qml:619
+msgid "De luchtvochtigheid is"
+msgstr "L'humidité est de"
+
+#: ../qml/Main.qml:619
+msgid "De wind komt uit het"
+msgstr "La direction du vent est"
+
+#: ../qml/Main.qml:619
+msgid "en heeft"
+msgstr "et a"
+
+#: ../qml/Main.qml:619
+msgid "een snelheid van"
+msgstr "une vitesse de"
+
+#: ../qml/Main.qml:735
+msgid "Dag"
+msgstr "Jour"
+
+#: ../qml/Main.qml:760
+msgid "Max"
+msgstr "Max"
+
+#: ../qml/Main.qml:785
+msgid "Min"
+msgstr "Min"
+
+#: ../qml/Main.qml:810
+msgid "Neerslag"
+msgstr "Précipitation"
+
+#: ../qml/Main.qml:963
+msgid "Deze radar is helaas niet beschikbaar voor Europa"
+msgstr "Ce radar n'est malheureusement pas disponible en Europe"
+
+#: ../qml/Main.qml:995
+msgid "Nederland"
+msgstr "Pays-Bas"
+
+#: ../qml/Main.qml:995
+msgid "Europa"
+msgstr "Europe"
+
+#: ../qml/Main.qml:1023
+msgid "Radarbeelden"
+msgstr "Images radar"
+
+#: ../qml/Main.qml:1023
+msgid "Onweer"
+msgstr "Orage"
+
+#: ../qml/Main.qml:1023
+msgid "Hagel"
+msgstr "Grêle"
+
+#: ../qml/Main.qml:1023
+msgid "Motregen"
+msgstr "Bruine"
+
+#: ../qml/Main.qml:1023
+msgid "Sneeuw"
+msgstr "Neige"
+
+#: ../qml/Main.qml:1023
+msgid "Satellietbeelden"
+msgstr "Images satellite"
+
+#: ../qml/Main.qml:1151
+msgid "Legenda"
+msgstr "Légende"
+
+#: ../qml/Main.qml:1238
+msgid "Actuele temperatuur"
+msgstr "Température actuelle"
+
+#: ../qml/Main.qml:1238
+msgid "Gevoelstemperatuur"
+msgstr "Température ressentie"
+
+#: ../qml/Main.qml:1238
+msgid "Grondtemperatuur"
+msgstr "Température au sol"
+
+#: ../qml/Main.qml:1238
+msgid "Minimum grondtemperatuur"
+msgstr "Température minimale au sol"
+
+#: ../qml/Main.qml:1238
+msgid "Minimumtemperatuur"
+msgstr "Température minimale"
+
+#: ../qml/Main.qml:1238
+msgid "Maximumtemperatuur"
+msgstr "Température maximale"
+
+#: ../qml/Main.qml:1238
+msgid "Actuele wind"
+msgstr "Vent actuel"
+
+#: ../qml/Main.qml:1238
+msgid "Maximale wind"
+msgstr "Vent maximum"
+
+#: ../qml/Main.qml:1238
+msgid "Actuele windstoten"
+msgstr "Rafales de vent actuelles"
+
+#: ../qml/Main.qml:1238
+msgid "Zwaarste windstoten"
+msgstr "Plus fortes rafales de vent"
+
+#: ../qml/Main.qml:1238
+msgid "Neerslag afgelopen uur"
+msgstr "Précipitations au cours de la dernière heure"
+
+#: ../qml/Main.qml:1238
+msgid "Dagelijkse neerslagsom"
+msgstr "Pluviométrie du jour"
+
+#: ../qml/Main.qml:1238
+msgid "Totaal aantal zonuren"
+msgstr "Nombre total d'heures de soleil"
+
+#: ../qml/Main.qml:1238
+msgid "Zicht en mist"
+msgstr "Visibilité et brouillard"
+
+#: ../qml/Main.qml:1238
+msgid "Luchtvochtigheid"
+msgstr "Humidité"
+
+#: ../qml/Main.qml:1238
+msgid "Luchtkwaliteitsindex"
+msgstr "Index de qualité de l'air"
+
+#: ../qml/Main.qml:1238
+msgid "Actuele ozon"
+msgstr "Ozone actuelle"
+
+#: ../qml/Main.qml:1238
+msgid "Actuele stikstofdioxide"
+msgstr "Dioxyde d'azote actuel"
+
+#: ../qml/Main.qml:1238
+msgid "Actuele fijnstof"
+msgstr "Niveau de particules fines actuel"
+
+#: ../qml/Main.qml:1238
+msgid "Pollen en hooikoorts"
+msgstr "Pollen et rhume des foins"
+
+#: ../qml/Main.qml:1238
+msgid "Muggenradar"
+msgstr "Radar à moustiques"
+
+#: ../qml/SettingsPage.qml:14
+msgid "Instellingen"
+msgstr "Paramètres"
+
+#: ../qml/SettingsPage.qml:50
+msgid ""
+"Kies een meetstation uit de lijst, of gebruik de zoekbalk om naar een stad "
+"of dorp te zoeken."
+msgstr ""
+"Choisissez une station de mesure dans la liste ou utilisez la barre de recherche pour trouver "
+"une ville ou un village."
+
+#: radar.desktop.in.h:1
+msgid "Radar"
+msgstr "Radar"
