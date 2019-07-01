@@ -32,7 +32,7 @@ msgstr ""
 "préparé avant de prendre la route !\n"
 "\n"
 "Vous pouvez voir en un clin d'œil s'il va pleuvoir dans les deux prochaines heures. De "
-"cette manière, vous ne serez jamais trempé !"
+"cette manière, vous ne serez jamais trempé!"
 
 #: ../qml/WelcomeWizard.qml:55 ../qml/WelcomeWizard.qml:323
 msgid "Verder"
@@ -116,7 +116,7 @@ msgid ""
 "op pad gaat!"
 msgstr ""
 "Radar vous fournit des informations météorologiques claires et fiables afin que vous soyez "
-"préparé avant de prendre la route !\n"
+"préparé avant de prendre la route !"
 
 #: ../qml/AboutDialog.qml:32
 msgid ""
