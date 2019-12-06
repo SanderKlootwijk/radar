@@ -545,7 +545,7 @@ MainView {
 
             anchors.horizontalCenter: parent.horizontalCenter
 
-            source: "http://api.buienradar.nl/image/1.0/RadarMapNL?w=512&h=512"
+            source: "https://image.buienradar.nl/2.0/image/animation/RadarMapRainNL?height=512&width=512&renderText=True&history=0&forecast=18&skip=1"
 
             Image {
               anchors.fill: parent
@@ -588,7 +588,7 @@ MainView {
               onSelectedIndexChanged: {
                 switch(selector.selectedIndex) {
                 case 0: {
-                  radar.source = "http://api.buienradar.nl/image/1.0/RadarMapNL?w=512&h=512"
+                  radar.source = "https://image.buienradar.nl/2.0/image/animation/RadarMapRainNL?height=512&width=512&renderText=True&history=0&forecast=18&skip=1"
                   break;
                 }
               case 1: {

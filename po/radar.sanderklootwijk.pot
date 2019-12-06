@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: radar.sanderklootwijk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-01 08:37+0000\n"
+"POT-Creation-Date: 2019-12-06 15:44+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,69 +16,6 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-
-#: ../qml/WelcomeWizard.qml:35
-msgid "Welkom bij Radar!"
-msgstr ""
-
-#: ../qml/WelcomeWizard.qml:43
-msgid ""
-"Radar geeft duidelijke en betrouwbare weersinfo zodat je droog en voorbereid "
-"op pad gaat!\n"
-"\n"
-"In één oogopslag zie je of het de komende twee uur gaat regenen. Op deze "
-"manier hoef je nooit nat te worden!"
-msgstr ""
-
-#: ../qml/WelcomeWizard.qml:55 ../qml/WelcomeWizard.qml:323
-msgid "Verder"
-msgstr ""
-
-#: ../qml/WelcomeWizard.qml:89
-msgid "Kies een thema"
-msgstr ""
-
-#: ../qml/WelcomeWizard.qml:99
-msgid ""
-"Je kunt kiezen tussen een donker\n"
-"of een licht thema..."
-msgstr ""
-
-#: ../qml/WelcomeWizard.qml:242
-msgid "Donker"
-msgstr ""
-
-#: ../qml/WelcomeWizard.qml:259
-msgid "Licht"
-msgstr ""
-
-#: ../qml/WelcomeWizard.qml:303 ../qml/Main.qml:410
-msgid "Locatie"
-msgstr ""
-
-#: ../qml/WelcomeWizard.qml:311
-msgid ""
-"Je kunt zo meteen via het menu rechtsboven in beeld een meetstation "
-"selecteren.\n"
-"\n"
-"Het standaard meetstation is De Bilt (Regio Utrecht)."
-msgstr ""
-
-#: ../qml/WelcomeWizard.qml:363
-msgid "Je bent helemaal klaar!"
-msgstr ""
-
-#: ../qml/WelcomeWizard.qml:371
-msgid ""
-"Je kunt de instellingen altijd wijzigen via het menu rechtsboven in beeld.\n"
-"\n"
-"Veel plezier bij het gebruik van Radar!"
-msgstr ""
-
-#: ../qml/WelcomeWizard.qml:383 ../qml/AboutDialog.qml:46
-#: ../qml/SettingsPage.qml:28
-msgid "Sluiten"
-msgstr ""
 
 #: ../qml/SettingsDialog.qml:20
 msgid ""
@@ -90,32 +27,19 @@ msgstr ""
 msgid "Toepassen"
 msgstr ""
 
-#: ../qml/AboutDialog.qml:10
-msgid "Over Radar"
+#: ../qml/SettingsPage.qml:14
+msgid "Instellingen"
 msgstr ""
 
-#: ../qml/AboutDialog.qml:32
+#: ../qml/SettingsPage.qml:28 ../qml/AboutDialog.qml:46
+#: ../qml/WelcomeWizard.qml:383
+msgid "Sluiten"
+msgstr ""
+
+#: ../qml/SettingsPage.qml:50
 msgid ""
-"Radar geeft duidelijke en betrouwbare weersinfo zodat je droog en voorbereid "
-"op pad gaat!"
-msgstr ""
-
-#: ../qml/AboutDialog.qml:32
-msgid ""
-"Disclaimer: Deze applicatie is zelfstandig ontwikkeld. Alle logo's en namen "
-"in deze toepassing zijn handelsmerken van hun respectievelijke eigenaars."
-msgstr ""
-
-#: ../qml/AboutDialog.qml:39
-msgid "Auteur"
-msgstr ""
-
-#: ../qml/AboutDialog.qml:39
-msgid "Licentie"
-msgstr ""
-
-#: ../qml/AboutDialog.qml:39
-msgid "Broncode"
+"Kies een meetstation uit de lijst, of gebruik de zoekbalk om naar een stad "
+"of dorp te zoeken."
 msgstr ""
 
 #: ../qml/Main.qml:215 ../qml/Main.qml:480
@@ -134,6 +58,10 @@ msgstr ""
 
 #: ../qml/Main.qml:325 ../qml/Main.qml:489
 msgid "Kaarten"
+msgstr ""
+
+#: ../qml/Main.qml:410 ../qml/WelcomeWizard.qml:303
+msgid "Locatie"
 msgstr ""
 
 #: ../qml/Main.qml:420
@@ -324,14 +252,86 @@ msgstr ""
 msgid "Muggenradar"
 msgstr ""
 
-#: ../qml/SettingsPage.qml:14
-msgid "Instellingen"
+#: ../qml/AboutDialog.qml:10
+msgid "Over Radar"
 msgstr ""
 
-#: ../qml/SettingsPage.qml:50
+#: ../qml/AboutDialog.qml:32
 msgid ""
-"Kies een meetstation uit de lijst, of gebruik de zoekbalk om naar een stad "
-"of dorp te zoeken."
+"Radar geeft duidelijke en betrouwbare weersinfo zodat je droog en voorbereid "
+"op pad gaat!"
+msgstr ""
+
+#: ../qml/AboutDialog.qml:32
+msgid ""
+"Disclaimer: Deze applicatie is zelfstandig ontwikkeld. Alle logo's en namen "
+"in deze toepassing zijn handelsmerken van hun respectievelijke eigenaars."
+msgstr ""
+
+#: ../qml/AboutDialog.qml:39
+msgid "Auteur"
+msgstr ""
+
+#: ../qml/AboutDialog.qml:39
+msgid "Licentie"
+msgstr ""
+
+#: ../qml/AboutDialog.qml:39
+msgid "Broncode"
+msgstr ""
+
+#: ../qml/WelcomeWizard.qml:35
+msgid "Welkom bij Radar!"
+msgstr ""
+
+#: ../qml/WelcomeWizard.qml:43
+msgid ""
+"Radar geeft duidelijke en betrouwbare weersinfo zodat je droog en voorbereid "
+"op pad gaat!\n"
+"\n"
+"In één oogopslag zie je of het de komende twee uur gaat regenen. Op deze "
+"manier hoef je nooit nat te worden!"
+msgstr ""
+
+#: ../qml/WelcomeWizard.qml:55 ../qml/WelcomeWizard.qml:323
+msgid "Verder"
+msgstr ""
+
+#: ../qml/WelcomeWizard.qml:89
+msgid "Kies een thema"
+msgstr ""
+
+#: ../qml/WelcomeWizard.qml:99
+msgid ""
+"Je kunt kiezen tussen een donker\n"
+"of een licht thema..."
+msgstr ""
+
+#: ../qml/WelcomeWizard.qml:242
+msgid "Donker"
+msgstr ""
+
+#: ../qml/WelcomeWizard.qml:259
+msgid "Licht"
+msgstr ""
+
+#: ../qml/WelcomeWizard.qml:311
+msgid ""
+"Je kunt zo meteen via het menu rechtsboven in beeld een meetstation "
+"selecteren.\n"
+"\n"
+"Het standaard meetstation is De Bilt (Regio Utrecht)."
+msgstr ""
+
+#: ../qml/WelcomeWizard.qml:363
+msgid "Je bent helemaal klaar!"
+msgstr ""
+
+#: ../qml/WelcomeWizard.qml:371
+msgid ""
+"Je kunt de instellingen altijd wijzigen via het menu rechtsboven in beeld.\n"
+"\n"
+"Veel plezier bij het gebruik van Radar!"
 msgstr ""
 
 #: radar.desktop.in.h:1
