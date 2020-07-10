@@ -51,7 +51,7 @@ Page {
     }
 
     Button {
-      color: "#19b6ee"
+      color: theme.palette.normal.activity
       text: i18n.tr("Verder")
       anchors.top: infoText.bottom
       anchors.topMargin: units.gu(5)
@@ -238,7 +238,7 @@ Page {
 
       Button {
         id: donker
-        color: "#19b6ee"
+        color: theme.palette.normal.activity
         text: i18n.tr("Donker")
         anchors.bottom: parent.bottom
         anchors.bottomMargin: units.gu(15)
@@ -255,7 +255,7 @@ Page {
 
       Button {
         id: licht
-        color: "#19b6ee"
+        color: theme.palette.normal.activity
         text: i18n.tr("Licht")
         anchors.bottom: parent.bottom
         anchors.bottomMargin: units.gu(15)
@@ -319,7 +319,7 @@ Page {
     }
 
     Button {
-      color: "#19b6ee"
+      color: theme.palette.normal.activity
       text: i18n.tr("Verder")
       anchors.top: locatieOndertitel.bottom
       anchors.topMargin: units.gu(5)
@@ -379,7 +379,7 @@ Page {
     }
 
     Button {
-      color: "#19b6ee"
+      color: theme.palette.normal.activity
       text: i18n.tr("Sluiten")
       anchors.top: eindeOndertitel.bottom
       anchors.topMargin: units.gu(5)

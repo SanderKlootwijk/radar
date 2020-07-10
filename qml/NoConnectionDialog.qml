@@ -38,7 +38,7 @@ Component {
 
     Button {
       text: "Sluiten"
-      color: "#19b6ee"
+      color: theme.palette.normal.activity
       onClicked: Qt.quit()
     }
 

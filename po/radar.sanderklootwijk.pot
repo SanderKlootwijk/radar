@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: radar.sanderklootwijk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-06 15:44+0000\n"
+"POT-Creation-Date: 2020-07-10 15:42+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,22 +17,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../qml/SettingsDialog.qml:20
-msgid ""
-"Om de instellingen toe te passen zal de app worden gesloten. U dient de app "
-"zelf, handmatig opnieuw te openen."
-msgstr ""
-
-#: ../qml/SettingsDialog.qml:26
-msgid "Toepassen"
-msgstr ""
-
 #: ../qml/SettingsPage.qml:14
 msgid "Instellingen"
 msgstr ""
 
-#: ../qml/SettingsPage.qml:28 ../qml/AboutDialog.qml:46
-#: ../qml/WelcomeWizard.qml:383
+#: ../qml/SettingsPage.qml:28 ../qml/WelcomeWizard.qml:383
+#: ../qml/AboutDialog.qml:46
 msgid "Sluiten"
 msgstr ""
 
@@ -80,204 +70,168 @@ msgstr ""
 msgid "Komende dagen"
 msgstr ""
 
-#: ../qml/Main.qml:587
-msgid "+2 uur"
-msgstr ""
-
-#: ../qml/Main.qml:587
-msgid "+24 uur"
-msgstr ""
-
-#: ../qml/Main.qml:619
+#: ../qml/Main.qml:737
 msgid "Huidig weer"
 msgstr ""
 
-#: ../qml/Main.qml:619
+#: ../qml/Main.qml:737
 msgid "Het is"
 msgstr ""
 
-#: ../qml/Main.qml:619
+#: ../qml/Main.qml:737
 msgid "De luchtvochtigheid is"
 msgstr ""
 
-#: ../qml/Main.qml:619
+#: ../qml/Main.qml:737
 msgid "De wind komt uit het"
 msgstr ""
 
-#: ../qml/Main.qml:619
+#: ../qml/Main.qml:737
 msgid "en heeft"
 msgstr ""
 
-#: ../qml/Main.qml:619
+#: ../qml/Main.qml:737
 msgid "een snelheid van"
 msgstr ""
 
-#: ../qml/Main.qml:735
+#: ../qml/Main.qml:853
 msgid "Dag"
 msgstr ""
 
-#: ../qml/Main.qml:760
+#: ../qml/Main.qml:878
 msgid "Max"
 msgstr ""
 
-#: ../qml/Main.qml:785
+#: ../qml/Main.qml:903
 msgid "Min"
 msgstr ""
 
-#: ../qml/Main.qml:810
+#: ../qml/Main.qml:928
 msgid "Neerslag"
 msgstr ""
 
-#: ../qml/Main.qml:963
+#: ../qml/Main.qml:1081
 msgid "Deze radar is helaas niet beschikbaar voor Europa"
 msgstr ""
 
-#: ../qml/Main.qml:995
+#: ../qml/Main.qml:1113
 msgid "Nederland"
 msgstr ""
 
-#: ../qml/Main.qml:995
+#: ../qml/Main.qml:1113
 msgid "Europa"
 msgstr ""
 
-#: ../qml/Main.qml:1023
+#: ../qml/Main.qml:1141
 msgid "Radarbeelden"
 msgstr ""
 
-#: ../qml/Main.qml:1023
+#: ../qml/Main.qml:1141
 msgid "Onweer"
 msgstr ""
 
-#: ../qml/Main.qml:1023
+#: ../qml/Main.qml:1141
 msgid "Hagel"
 msgstr ""
 
-#: ../qml/Main.qml:1023
+#: ../qml/Main.qml:1141
 msgid "Motregen"
 msgstr ""
 
-#: ../qml/Main.qml:1023
+#: ../qml/Main.qml:1141
 msgid "Sneeuw"
 msgstr ""
 
-#: ../qml/Main.qml:1023
+#: ../qml/Main.qml:1141
 msgid "Satellietbeelden"
 msgstr ""
 
-#: ../qml/Main.qml:1151
+#: ../qml/Main.qml:1269
 msgid "Legenda"
 msgstr ""
 
-#: ../qml/Main.qml:1238
+#: ../qml/Main.qml:1356
 msgid "Actuele temperatuur"
 msgstr ""
 
-#: ../qml/Main.qml:1238
+#: ../qml/Main.qml:1356
 msgid "Gevoelstemperatuur"
 msgstr ""
 
-#: ../qml/Main.qml:1238
+#: ../qml/Main.qml:1356
 msgid "Grondtemperatuur"
 msgstr ""
 
-#: ../qml/Main.qml:1238
+#: ../qml/Main.qml:1356
 msgid "Minimum grondtemperatuur"
 msgstr ""
 
-#: ../qml/Main.qml:1238
+#: ../qml/Main.qml:1356
 msgid "Minimumtemperatuur"
 msgstr ""
 
-#: ../qml/Main.qml:1238
+#: ../qml/Main.qml:1356
 msgid "Maximumtemperatuur"
 msgstr ""
 
-#: ../qml/Main.qml:1238
+#: ../qml/Main.qml:1356
 msgid "Actuele wind"
 msgstr ""
 
-#: ../qml/Main.qml:1238
+#: ../qml/Main.qml:1356
 msgid "Maximale wind"
 msgstr ""
 
-#: ../qml/Main.qml:1238
+#: ../qml/Main.qml:1356
 msgid "Actuele windstoten"
 msgstr ""
 
-#: ../qml/Main.qml:1238
+#: ../qml/Main.qml:1356
 msgid "Zwaarste windstoten"
 msgstr ""
 
-#: ../qml/Main.qml:1238
+#: ../qml/Main.qml:1356
 msgid "Neerslag afgelopen uur"
 msgstr ""
 
-#: ../qml/Main.qml:1238
+#: ../qml/Main.qml:1356
 msgid "Dagelijkse neerslagsom"
 msgstr ""
 
-#: ../qml/Main.qml:1238
+#: ../qml/Main.qml:1356
 msgid "Totaal aantal zonuren"
 msgstr ""
 
-#: ../qml/Main.qml:1238
+#: ../qml/Main.qml:1356
 msgid "Zicht en mist"
 msgstr ""
 
-#: ../qml/Main.qml:1238
+#: ../qml/Main.qml:1356
 msgid "Luchtvochtigheid"
 msgstr ""
 
-#: ../qml/Main.qml:1238
+#: ../qml/Main.qml:1356
 msgid "Luchtkwaliteitsindex"
 msgstr ""
 
-#: ../qml/Main.qml:1238
+#: ../qml/Main.qml:1356
 msgid "Actuele ozon"
 msgstr ""
 
-#: ../qml/Main.qml:1238
+#: ../qml/Main.qml:1356
 msgid "Actuele stikstofdioxide"
 msgstr ""
 
-#: ../qml/Main.qml:1238
+#: ../qml/Main.qml:1356
 msgid "Actuele fijnstof"
 msgstr ""
 
-#: ../qml/Main.qml:1238
+#: ../qml/Main.qml:1356
 msgid "Pollen en hooikoorts"
 msgstr ""
 
-#: ../qml/Main.qml:1238
+#: ../qml/Main.qml:1356
 msgid "Muggenradar"
-msgstr ""
-
-#: ../qml/AboutDialog.qml:10
-msgid "Over Radar"
-msgstr ""
-
-#: ../qml/AboutDialog.qml:32
-msgid ""
-"Radar geeft duidelijke en betrouwbare weersinfo zodat je droog en voorbereid "
-"op pad gaat!"
-msgstr ""
-
-#: ../qml/AboutDialog.qml:32
-msgid ""
-"Disclaimer: Deze applicatie is zelfstandig ontwikkeld. Alle logo's en namen "
-"in deze toepassing zijn handelsmerken van hun respectievelijke eigenaars."
-msgstr ""
-
-#: ../qml/AboutDialog.qml:39
-msgid "Auteur"
-msgstr ""
-
-#: ../qml/AboutDialog.qml:39
-msgid "Licentie"
-msgstr ""
-
-#: ../qml/AboutDialog.qml:39
-msgid "Broncode"
 msgstr ""
 
 #: ../qml/WelcomeWizard.qml:35
@@ -332,6 +286,44 @@ msgid ""
 "Je kunt de instellingen altijd wijzigen via het menu rechtsboven in beeld.\n"
 "\n"
 "Veel plezier bij het gebruik van Radar!"
+msgstr ""
+
+#: ../qml/SettingsDialog.qml:20
+msgid ""
+"Om de instellingen toe te passen zal de app worden gesloten. U dient de app "
+"zelf, handmatig opnieuw te openen."
+msgstr ""
+
+#: ../qml/SettingsDialog.qml:26
+msgid "Toepassen"
+msgstr ""
+
+#: ../qml/AboutDialog.qml:10
+msgid "Over Radar"
+msgstr ""
+
+#: ../qml/AboutDialog.qml:32
+msgid ""
+"Radar geeft duidelijke en betrouwbare weersinfo zodat je droog en voorbereid "
+"op pad gaat!"
+msgstr ""
+
+#: ../qml/AboutDialog.qml:32
+msgid ""
+"Disclaimer: Deze applicatie is zelfstandig ontwikkeld. Alle logo's en namen "
+"in deze toepassing zijn handelsmerken van hun respectievelijke eigenaars."
+msgstr ""
+
+#: ../qml/AboutDialog.qml:39
+msgid "Auteur"
+msgstr ""
+
+#: ../qml/AboutDialog.qml:39
+msgid "Licentie"
+msgstr ""
+
+#: ../qml/AboutDialog.qml:39
+msgid "Broncode"
 msgstr ""
 
 #: radar.desktop.in.h:1

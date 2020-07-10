@@ -24,7 +24,7 @@ Component {
       width: parent.width
       id: toepassen
       text: i18n.tr("Toepassen")
-      color: "#19b6ee"
+      color: theme.palette.normal.activity
 
       onClicked: {
         Qt.quit()

@@ -545,7 +545,7 @@ MainView {
 
             anchors.horizontalCenter: parent.horizontalCenter
 
-            source: "https://image.buienradar.nl/2.0/image/animation/RadarMapRainNL?height=512&width=512&renderText=True&history=0&forecast=18&skip=1"
+            source: "https://image.buienradar.nl/2.0/image/animation/RadarMapRainNL?height=512&width=512&renderText=True&history=1&forecast=15&skip=1"
 
             Image {
               anchors.fill: parent
@@ -574,30 +574,148 @@ MainView {
               anchors.centerIn: parent
             }
 
-            OptionSelector {
-              id: selector
-              width: units.gu(14)
+            Row {
+              id: radarRow
+              height: units.gu(5)
+              width: units.gu(5)
+
+              spacing: units.gu(1)
+
               anchors {
                 right: parent.right
                 rightMargin: units.gu(1)
                 bottom: parent.bottom
                 bottomMargin: units.gu(1)
               }
-              expanded: true
-              model: [i18n.tr("+2 uur"),i18n.tr("+24 uur")]
-              onSelectedIndexChanged: {
-                switch(selector.selectedIndex) {
-                case 0: {
-                  radar.source = "https://image.buienradar.nl/2.0/image/animation/RadarMapRainNL?height=512&width=512&renderText=True&history=0&forecast=18&skip=1"
-                  break;
+
+              Button {
+                id: minus1Button
+                visible: false
+
+                width: units.gu(5)
+                height: units.gu(5)
+
+                color: theme.palette.normal.background
+
+                text: "-1"
+
+                onClicked: {
+                  // Set source
+                  radar.source = "https://image.buienradar.nl/2.0/image/animation/RadarMapRainNL?height=512&width=512&renderText=True&history=8&forecast=0&skip=1"
+
+                  // Colapse buttonrow
+                  radarRow.width = units.gu(5)
+                  expandButton.visible = true
+                  collapseButton.visible = false
+                  minus1Button.visible = false
+                  plus2Button.visible = false
+                  plus24Button.visible = false
                 }
-              case 1: {
-                radar.source = "http://api.buienradar.nl/image/1.0/24hourforecastmapnl/?ext=gif"
-                break;
+              }
+
+              Button {
+                id: plus2Button
+                visible: false
+
+                width: units.gu(5)
+                height: units.gu(5)
+
+                color: theme.palette.normal.background
+
+                text: "+2"
+
+                onClicked: {
+                  // Set source
+                  radar.source = "https://image.buienradar.nl/2.0/image/animation/RadarMapRainNL?height=512&width=512&renderText=True&history=1&forecast=15&skip=1"
+
+                  // Colapse buttonrow
+                  radarRow.width = units.gu(5)
+                  expandButton.visible = true
+                  collapseButton.visible = false
+                  minus1Button.visible = false
+                  plus2Button.visible = false
+                  plus24Button.visible = false
+                }
+              }
+
+              Button {
+                id: plus24Button
+                visible: false
+
+                width: units.gu(5)
+                height: units.gu(5)
+
+                color: theme.palette.normal.background
+
+                text: "+24"
+
+                onClicked: {
+                  // Set source
+                  radar.source = "http://api.buienradar.nl/image/1.0/24hourforecastmapnl/?ext=gif"
+
+                  // Colapse buttonrow
+                  radarRow.width = units.gu(5)
+                  expandButton.visible = true
+                  collapseButton.visible = false
+                  minus1Button.visible = false
+                  plus2Button.visible = false
+                  plus24Button.visible = false
+                }
+              }
+
+              Button {
+                id: expandButton
+                width: units.gu(5)
+                height: units.gu(5)
+
+                color: theme.palette.normal.activity
+
+                text: {
+                  if (radar.source == "https://image.buienradar.nl/2.0/image/animation/RadarMapRainNL?height=512&width=512&renderText=True&history=8&forecast=0&skip=1") {
+                    "-1"
+                  }
+                  else if (radar.source == "https://image.buienradar.nl/2.0/image/animation/RadarMapRainNL?height=512&width=512&renderText=True&history=1&forecast=15&skip=1") {
+                    "+2"
+                  }
+                  else if (radar.source == "http://api.buienradar.nl/image/1.0/24hourforecastmapnl/?ext=gif") {
+                    "+24"
+                  }
+                  else {
+                    "<"
+                  }
+                }
+
+                onClicked: {
+                  radarRow.width = units.gu(23)
+                  expandButton.visible = false
+                  collapseButton.visible = true
+                  minus1Button.visible = true
+                  plus2Button.visible = true
+                  plus24Button.visible = true
+                }
+              }
+
+              Button {
+                id: collapseButton
+                visible: false
+
+                width: units.gu(5)
+                height: units.gu(5)
+
+                color: theme.palette.normal.activity
+
+                text: ">"
+
+                onClicked: {
+                  radarRow.width = units.gu(5)
+                  expandButton.visible = true
+                  collapseButton.visible = false
+                  minus1Button.visible = false
+                  plus2Button.visible = false
+                  plus24Button.visible = false
+                }
               }
             }
-          }
-        }
       }
 
       Rectangle {
@@ -616,7 +734,7 @@ MainView {
             id: text
             width: parent.width
             textFormat: Text.StyledText
-            text:  '<p><b><font color="' + theme.palette.normal.baseText + '">' + i18n.tr('Huidig weer') + '</font></b></p><font color="' + theme.palette.normal.baseText + '">' + i18n.tr('Het is') + ' </font><font color="#19b6ee">' + temp + 'ºC</font><font color="' + theme.palette.normal.baseText + '"> (' + stationnaam + ')' + '<br>' + i18n.tr('De luchtvochtigheid is') + ' </font><font color="#19b6ee">' + luchtvochtigheid + '%</font>' + '<font color="' + theme.palette.normal.baseText + '"><br>' + i18n.tr('De wind komt uit het') + ' </font><font color="#19b6ee">' + wind + '</font><font color="' + theme.palette.normal.baseText + '"> ' + i18n.tr('en heeft') + ' <br> ' + i18n.tr('een snelheid van') + ' </font><font color="#19b6ee">' + windms + ' m/s</font>' + '</p><p>' + '&nbsp;<br>&nbsp;'
+            text:  '<p><b><font color="' + theme.palette.normal.baseText + '">' + i18n.tr('Huidig weer') + '</font></b></p><font color="' + theme.palette.normal.baseText + '">' + i18n.tr('Het is') + ' </font><font color="' + theme.palette.normal.activity + '">' + temp + 'ºC</font><font color="' + theme.palette.normal.baseText + '"> (' + stationnaam + ')' + '<br>' + i18n.tr('De luchtvochtigheid is') + ' </font><font color="' + theme.palette.normal.activity + '">' + luchtvochtigheid + '%</font>' + '<font color="' + theme.palette.normal.baseText + '"><br>' + i18n.tr('De wind komt uit het') + ' </font><font color="' + theme.palette.normal.activity + '">' + wind + '</font><font color="' + theme.palette.normal.baseText + '"> ' + i18n.tr('en heeft') + ' <br> ' + i18n.tr('een snelheid van') + ' </font><font color="' + theme.palette.normal.activity + '">' + windms + ' m/s</font>' + '</p><p>' + '&nbsp;<br>&nbsp;'
             wrapMode: Text.WordWrap
           }
         }
@@ -732,7 +850,7 @@ MainView {
               width: parent.width
               textFormat: Text.StyledText
               font.pointSize: units.gu(1.5)
-              text:  '<p><font color="#19b6ee">' + i18n.tr('Dag') + '</font></p><p>&nbsp;</p><font color="' + theme.palette.normal.baseText + '">' + morgen + '<p>&nbsp;</p><p>' + overmorgen +  '<p>&nbsp;</p><p>' + overovermorgen + '<p>&nbsp;</p><p>' + overoverovermorgen + '<p>&nbsp;</p><p>' + overoveroverovermorgen + '</font><p>&nbsp;</p>'
+              text:  '<p><font color="' + theme.palette.normal.activity + '">' + i18n.tr('Dag') + '</font></p><p>&nbsp;</p><font color="' + theme.palette.normal.baseText + '">' + morgen + '<p>&nbsp;</p><p>' + overmorgen +  '<p>&nbsp;</p><p>' + overovermorgen + '<p>&nbsp;</p><p>' + overoverovermorgen + '<p>&nbsp;</p><p>' + overoveroverovermorgen + '</font><p>&nbsp;</p>'
               wrapMode: Text.WordWrap
             }
           }
@@ -757,7 +875,7 @@ MainView {
               width: parent.width
               textFormat: Text.StyledText
               font.pointSize: units.gu(1.5)
-              text:  '<p><font color="#19b6ee">' + i18n.tr('Max') + '</font></p><p>&nbsp;</p><font color="' + theme.palette.normal.baseText + '">' + tempmorgenmax + '<p>&nbsp;</p><p>' + tempovermorgenmax +  '<p>&nbsp;</p><p>' + tempoverovermorgenmax + '<p>&nbsp;</p><p>' + tempoveroverovermorgenmax + '<p>&nbsp;</p><p>' + tempoveroveroverovermorgenmax + '</font><p>&nbsp;</p>'
+              text:  '<p><font color="' + theme.palette.normal.activity + '">' + i18n.tr('Max') + '</font></p><p>&nbsp;</p><font color="' + theme.palette.normal.baseText + '">' + tempmorgenmax + '<p>&nbsp;</p><p>' + tempovermorgenmax +  '<p>&nbsp;</p><p>' + tempoverovermorgenmax + '<p>&nbsp;</p><p>' + tempoveroverovermorgenmax + '<p>&nbsp;</p><p>' + tempoveroveroverovermorgenmax + '</font><p>&nbsp;</p>'
               wrapMode: Text.WordWrap
             }
           }
@@ -782,7 +900,7 @@ MainView {
               width: parent.width
               textFormat: Text.StyledText
               font.pointSize: units.gu(1.5)
-              text:  '<p><font color="#19b6ee">' + i18n.tr('Min') + '</font></p><p>&nbsp;</p><font color="' + theme.palette.normal.baseText + '">' + tempmorgenmin + '<p>&nbsp;</p><p>' + tempovermorgenmin +  '<p>&nbsp;</p><p>' + tempoverovermorgenmin + '<p>&nbsp;</p><p>' + tempoveroverovermorgenmin + '<p>&nbsp;</p><p>' + tempoveroveroverovermorgenmin + '</font><p>&nbsp;</p>'
+              text:  '<p><font color="' + theme.palette.normal.activity + '">' + i18n.tr('Min') + '</font></p><p>&nbsp;</p><font color="' + theme.palette.normal.baseText + '">' + tempmorgenmin + '<p>&nbsp;</p><p>' + tempovermorgenmin +  '<p>&nbsp;</p><p>' + tempoverovermorgenmin + '<p>&nbsp;</p><p>' + tempoveroverovermorgenmin + '<p>&nbsp;</p><p>' + tempoveroveroverovermorgenmin + '</font><p>&nbsp;</p>'
               wrapMode: Text.WordWrap
             }
           }
@@ -807,7 +925,7 @@ MainView {
               width: parent.width
               textFormat: Text.StyledText
               font.pointSize: units.gu(1.5)
-              text:  '<p><font color="#19b6ee">' + i18n.tr('Neerslag') + '</font></p><p>&nbsp;</p><font color="' + theme.palette.normal.baseText + '">' + kansregenmorgen + '%<p>&nbsp;</p><p>' + kansregenovermorgen +  '%<p>&nbsp;</p><p>' + kansregenoverovermorgen + '%<p>&nbsp;</p><p>' + kansregenoveroverovermorgen + '%<p>&nbsp;</p><p>' + kansregenoveroveroverovermorgen + '%</font><p>&nbsp;</p>'
+              text:  '<p><font color="' + theme.palette.normal.activity + '">' + i18n.tr('Neerslag') + '</font></p><p>&nbsp;</p><font color="' + theme.palette.normal.baseText + '">' + kansregenmorgen + '%<p>&nbsp;</p><p>' + kansregenovermorgen +  '%<p>&nbsp;</p><p>' + kansregenoverovermorgen + '%<p>&nbsp;</p><p>' + kansregenoveroverovermorgen + '%<p>&nbsp;</p><p>' + kansregenoveroveroverovermorgen + '%</font><p>&nbsp;</p>'
               wrapMode: Text.WordWrap
             }
           }
@@ -1147,7 +1265,7 @@ Item {
 
     Button {
       id: legendaButton
-      color: "#19b6ee"
+      color: theme.palette.normal.activity
       text: i18n.tr("Legenda")
       visible: {
         if (kaart.status == 1) {

@@ -33,7 +33,7 @@ Component {
     }
 
     Label {
-      linkColor: "#19b6ee"
+      linkColor: theme.palette.normal.activity
       width: parent.width
       wrapMode: Text.Wrap
       text: i18n.tr('Auteur') + ': Sander Klootwijk<br/>Telegram: <a href="https://www.t.me/SanderKlootwijk">@SanderKlootwijk</a><br/>' + i18n.tr('Licentie') + ': <a href="https://www.gnu.org/licenses/gpl.html">GNU GPL v3</a><br/>' + i18n.tr('Broncode') + ': <a href="https://github.com/SanderKlootwijk/Radar">GitHub</a>'
@@ -42,7 +42,7 @@ Component {
 
     Button {
       width: parent.width
-      color: "#19b6ee"
+      color: theme.palette.normal.activity
       text: i18n.tr("Sluiten")
 
       onClicked: {
