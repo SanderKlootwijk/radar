@@ -1,42 +1,56 @@
-project(radar C CXX)
 cmake_minimum_required(VERSION 3.0.0)
-
-set(CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
-
-find_package(Qt5Core)
-find_package(Qt5Qml)
-find_package(Qt5Quick)
+project(radar C CXX)
 
 # Automatically create moc files
 set(CMAKE_AUTOMOC ON)
 
-# Components PATH
+find_package(Qt5Core REQUIRED)
+find_package(Qt5Qml REQUIRED)
+find_package(Qt5Quick REQUIRED)
+find_package(Qt5QuickControls2 REQUIRED)
+
 execute_process(
     COMMAND dpkg-architecture -qDEB_HOST_MULTIARCH
     OUTPUT_VARIABLE ARCH_TRIPLET
     OUTPUT_STRIP_TRAILING_WHITESPACE
 )
-
 set(QT_IMPORTS_DIR "lib/${ARCH_TRIPLET}")
 
 set(PROJECT_NAME "radar")
 set(FULL_PROJECT_NAME "radar.sanderklootwijk")
-set(CMAKE_INSTALL_PREFIX /)
 set(DATA_DIR /)
 set(DESKTOP_FILE_NAME ${PROJECT_NAME}.desktop)
 
-# This command figures out the target architecture for use in the manifest file
-execute_process(
-    COMMAND dpkg-architecture -qDEB_HOST_ARCH
-    OUTPUT_VARIABLE CLICK_ARCH
-    OUTPUT_STRIP_TRAILING_WHITESPACE
-)
+# This command figures out the minimum SDK framework for use in the manifest
+# file via the environment variable provided by Clickable or sets a default value otherwise.
+if(DEFINED ENV{SDK_FRAMEWORK})
+    set(CLICK_FRAMEWORK "$ENV{SDK_FRAMEWORK}")
+else()
+    set(CLICK_FRAMEWORK "ubuntu-sdk-20.04")
+endif()
+
+# This figures out the target architecture for use in the manifest file.
+if(DEFINED ENV{ARCH})
+    set(CLICK_ARCH "$ENV{ARCH}")
+else()
+    execute_process(
+        COMMAND dpkg-architecture -qDEB_HOST_ARCH
+        OUTPUT_VARIABLE CLICK_ARCH
+        OUTPUT_STRIP_TRAILING_WHITESPACE
+    )
+endif()
 
 configure_file(manifest.json.in ${CMAKE_CURRENT_BINARY_DIR}/manifest.json)
 install(FILES ${CMAKE_CURRENT_BINARY_DIR}/manifest.json DESTINATION ${CMAKE_INSTALL_PREFIX})
 install(FILES ${PROJECT_NAME}.apparmor DESTINATION ${DATA_DIR})
-install(DIRECTORY qml DESTINATION ${DATA_DIR})
-install(DIRECTORY assets DESTINATION ${DATA_DIR})
+install(FILES assets/logo.svg DESTINATION assets)
+
+qt5_add_resources(QT_RESOURCES qml/qml.qrc)
+qt5_add_resources(QT_RESOURCES assets/assets.qrc)
+add_executable(${PROJECT_NAME} main.cpp ${QT_RESOURCES})
+set_target_properties(${PROJECT_NAME} PROPERTIES LINK_FLAGS_RELEASE -s)
+target_link_libraries(${PROJECT_NAME} Qt5::Gui Qt5::Qml Qt5::Quick Qt5::QuickControls2)
+install(TARGETS ${PROJECT_NAME} RUNTIME DESTINATION ${CMAKE_INSTALL_PREFIX})
 
 # Translations
 file(GLOB_RECURSE I18N_SRC_FILES RELATIVE ${CMAKE_CURRENT_SOURCE_DIR}/po qml/*.qml qml/*.js)
@@ -60,12 +74,14 @@ add_custom_target(${DESKTOP_FILE_NAME} ALL
 install(FILES ${CMAKE_CURRENT_BINARY_DIR}/${DESKTOP_FILE_NAME} DESTINATION ${DATA_DIR})
 
 add_subdirectory(po)
+add_subdirectory(plugins)
 
 # Make source files visible in qtcreator
 file(GLOB_RECURSE PROJECT_SRC_FILES
     RELATIVE ${CMAKE_CURRENT_SOURCE_DIR}
     qml/*.qml
     qml/*.js
+    src/*
     *.json
     *.json.in
     *.apparmor
