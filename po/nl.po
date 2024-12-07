@@ -1,0 +1,271 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the radar.sanderklootwijk package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: radar.sanderklootwijk\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-11-28 18:18+0000\n"
+"PO-Revision-Date: 2024-11-28 19:20+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.4.2\n"
+
+#: ../qml/Main.qml:71
+msgid "Loading..."
+msgstr "Laden..."
+
+#: ../qml/Main.qml:230
+msgid "Fri"
+msgstr "Vr"
+
+#: ../qml/Main.qml:230
+msgid "Mon"
+msgstr "Ma"
+
+#: ../qml/Main.qml:230
+msgid "Sat"
+msgstr "Za"
+
+#: ../qml/Main.qml:230
+msgid "Sun"
+msgstr "Zo"
+
+#: ../qml/Main.qml:230
+msgid "Thu"
+msgstr "Do"
+
+#: ../qml/Main.qml:230
+msgid "Tue"
+msgstr "Di"
+
+#: ../qml/Main.qml:230
+msgid "Wed"
+msgstr "Wo"
+
+#: ../qml/Main.qml:232
+msgid "Friday"
+msgstr "Vrijdag"
+
+#: ../qml/Main.qml:232
+msgid "Monday"
+msgstr "Maandag"
+
+#: ../qml/Main.qml:232
+msgid "Saturday"
+msgstr "Zaterdag"
+
+#: ../qml/Main.qml:232
+msgid "Sunday"
+msgstr "Zondag"
+
+#: ../qml/Main.qml:232
+msgid "Thursday"
+msgstr "Donderdag"
+
+#: ../qml/Main.qml:232
+msgid "Tuesday"
+msgstr "Dinsdag"
+
+#: ../qml/Main.qml:232
+msgid "Wednesday"
+msgstr "Woensdag"
+
+#: ../qml/Main.qml:233
+msgid "April"
+msgstr "april"
+
+#: ../qml/Main.qml:233
+msgid "August"
+msgstr "augustus"
+
+#: ../qml/Main.qml:233
+msgid "December"
+msgstr "december"
+
+#: ../qml/Main.qml:233
+msgid "February"
+msgstr "februari"
+
+#: ../qml/Main.qml:233
+msgid "January"
+msgstr "januari"
+
+#: ../qml/Main.qml:233
+msgid "July"
+msgstr "juli"
+
+#: ../qml/Main.qml:233
+msgid "June"
+msgstr "juni"
+
+#: ../qml/Main.qml:233
+msgid "March"
+msgstr "maart"
+
+#: ../qml/Main.qml:233
+msgid "May"
+msgstr "mei"
+
+#: ../qml/Main.qml:233
+msgid "November"
+msgstr "november"
+
+#: ../qml/Main.qml:233
+msgid "October"
+msgstr "oktober"
+
+#: ../qml/Main.qml:233
+msgid "September"
+msgstr "september"
+
+#: ../qml/components/DayItem.qml:215 ../qml/pages/MainPage.qml:220
+msgid "Feel."
+msgstr "Gevoel."
+
+#: ../qml/components/DayItem.qml:215 ../qml/pages/MainPage.qml:220
+msgid "Temp."
+msgstr "Temp."
+
+#: ../qml/components/DayItem.qml:226 ../qml/pages/MainPage.qml:231
+msgid "Precipitation"
+msgstr "Neerslag"
+
+#: ../qml/components/DayItem.qml:237 ../qml/pages/MainPage.qml:242
+msgid "Wind"
+msgstr "Wind"
+
+#: ../qml/components/PrecipitationChart.qml:150
+msgid "No precipitation expected"
+msgstr "Geen neerslag verwacht"
+
+#: ../qml/components/Radar.qml:314
+msgid "Rain"
+msgstr "Regen"
+
+#: ../qml/components/Radar.qml:315
+msgid "Drizzle"
+msgstr "Motregen"
+
+#: ../qml/components/Radar.qml:316
+msgid "Snow"
+msgstr "Sneeuw"
+
+#: ../qml/components/Radar.qml:317
+msgid "Lightning"
+msgstr "Onweer"
+
+#: ../qml/components/Radar.qml:318
+msgid "Satellite"
+msgstr "Satelliet"
+
+#: ../qml/pages/AboutPage.qml:26 ../qml/pages/MainPage.qml:53
+msgid "About"
+msgstr "Over"
+
+#: ../qml/pages/AboutPage.qml:81 radar.desktop.in.h:1
+msgid "Radar"
+msgstr "Radar"
+
+#: ../qml/pages/AboutPage.qml:86
+msgid "Version"
+msgstr "Versie"
+
+#: ../qml/pages/AboutPage.qml:105
+msgid "Source code"
+msgstr "Broncode"
+
+#: ../qml/pages/AboutPage.qml:106
+msgid "Report issues"
+msgstr "Meld problemen"
+
+#: ../qml/pages/AboutPage.qml:134
+msgid "API usage"
+msgstr "API gebruik"
+
+#: ../qml/pages/MainPage.qml:41
+msgid "Location"
+msgstr "Locatie"
+
+#: ../qml/pages/MainPage.qml:48 ../qml/pages/SettingsPage.qml:27
+msgid "Settings"
+msgstr "Instellingen"
+
+#: ../qml/pages/MainPage.qml:65
+msgid "Today"
+msgstr "Vandaag"
+
+#: ../qml/pages/MainPage.qml:68
+msgid "Coming days"
+msgstr "Komende dagen"
+
+#: ../qml/pages/MainPage.qml:137
+msgid "Weather forecast Netherlands"
+msgstr "Weerbericht Nederland"
+
+#: ../qml/pages/MainPage.qml:160
+msgid "Read the entire forecast"
+msgstr "Lees het volledige weerbericht"
+
+#: ../qml/pages/MainPage.qml:183
+msgid "Coming hours in"
+msgstr "Komende uren in"
+
+#: ../qml/pages/MainPage.qml:268
+msgid "Show full overview"
+msgstr "Bekijk het volledige overzicht"
+
+#: ../qml/pages/MainPage.qml:331
+msgid "Today in"
+msgstr "Vandaag in"
+
+#: ../qml/pages/MainPage.qml:417
+msgid "Air pressure"
+msgstr "Luchtdruk"
+
+#: ../qml/pages/MainPage.qml:417
+msgid "Feel temperature"
+msgstr "Gevoelstemperatuur"
+
+#: ../qml/pages/MainPage.qml:417
+msgid "Ground temperature"
+msgstr "Grondtemperatuur"
+
+#: ../qml/pages/MainPage.qml:417
+msgid "Humidity"
+msgstr "Luchtvochtigheid"
+
+#: ../qml/pages/MainPage.qml:417
+msgid "Sun power"
+msgstr "Zonintensiteit"
+
+#: ../qml/pages/MainPage.qml:417
+msgid "Visibility"
+msgstr "Zicht"
+
+#: ../qml/pages/MainPage.qml:417
+msgid "Wind gusts"
+msgstr "Windstoten"
+
+#: ../qml/pages/SearchPage.qml:46
+msgid "Search for a location"
+msgstr "Zoek naar een locatie"
+
+#: ../qml/pages/SearchPage.qml:111
+msgid "No locations found"
+msgstr "Geen locaties gevonden"
+
+#: ../qml/pages/SettingsPage.qml:73
+msgid "Theme"
+msgstr "Thema"
+
+#: ../qml/pages/SettingsPage.qml:94
+msgid "System"
+msgstr "Systeem"
