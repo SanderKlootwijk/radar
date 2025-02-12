@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: radar.sanderklootwijk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-06 21:34+0000\n"
+"POT-Creation-Date: 2025-02-12 15:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,127 +17,127 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../qml/Main.qml:78 ../qml/pages/MainPage.qml:208
+#: ../qml/Main.qml:79 ../qml/pages/MainPage.qml:225
 msgid "Loading..."
 msgstr ""
 
-#: ../qml/Main.qml:254
+#: ../qml/Main.qml:255
 msgid "Fri"
 msgstr ""
 
-#: ../qml/Main.qml:254
+#: ../qml/Main.qml:255
 msgid "Mon"
 msgstr ""
 
-#: ../qml/Main.qml:254
+#: ../qml/Main.qml:255
 msgid "Sat"
 msgstr ""
 
-#: ../qml/Main.qml:254
+#: ../qml/Main.qml:255
 msgid "Sun"
 msgstr ""
 
-#: ../qml/Main.qml:254
+#: ../qml/Main.qml:255
 msgid "Thu"
 msgstr ""
 
-#: ../qml/Main.qml:254
+#: ../qml/Main.qml:255
 msgid "Tue"
 msgstr ""
 
-#: ../qml/Main.qml:254
+#: ../qml/Main.qml:255
 msgid "Wed"
 msgstr ""
 
-#: ../qml/Main.qml:256
+#: ../qml/Main.qml:257
 msgid "Friday"
 msgstr ""
 
-#: ../qml/Main.qml:256
+#: ../qml/Main.qml:257
 msgid "Monday"
 msgstr ""
 
-#: ../qml/Main.qml:256
+#: ../qml/Main.qml:257
 msgid "Saturday"
 msgstr ""
 
-#: ../qml/Main.qml:256
+#: ../qml/Main.qml:257
 msgid "Sunday"
 msgstr ""
 
-#: ../qml/Main.qml:256
+#: ../qml/Main.qml:257
 msgid "Thursday"
 msgstr ""
 
-#: ../qml/Main.qml:256
+#: ../qml/Main.qml:257
 msgid "Tuesday"
 msgstr ""
 
-#: ../qml/Main.qml:256
+#: ../qml/Main.qml:257
 msgid "Wednesday"
 msgstr ""
 
-#: ../qml/Main.qml:257
+#: ../qml/Main.qml:258
 msgid "April"
 msgstr ""
 
-#: ../qml/Main.qml:257
+#: ../qml/Main.qml:258
 msgid "August"
 msgstr ""
 
-#: ../qml/Main.qml:257
+#: ../qml/Main.qml:258
 msgid "December"
 msgstr ""
 
-#: ../qml/Main.qml:257
+#: ../qml/Main.qml:258
 msgid "February"
 msgstr ""
 
-#: ../qml/Main.qml:257
+#: ../qml/Main.qml:258
 msgid "January"
 msgstr ""
 
-#: ../qml/Main.qml:257
+#: ../qml/Main.qml:258
 msgid "July"
 msgstr ""
 
-#: ../qml/Main.qml:257
+#: ../qml/Main.qml:258
 msgid "June"
 msgstr ""
 
-#: ../qml/Main.qml:257
+#: ../qml/Main.qml:258
 msgid "March"
 msgstr ""
 
-#: ../qml/Main.qml:257
+#: ../qml/Main.qml:258
 msgid "May"
 msgstr ""
 
-#: ../qml/Main.qml:257
+#: ../qml/Main.qml:258
 msgid "November"
 msgstr ""
 
-#: ../qml/Main.qml:257
+#: ../qml/Main.qml:258
 msgid "October"
 msgstr ""
 
-#: ../qml/Main.qml:257
+#: ../qml/Main.qml:258
 msgid "September"
 msgstr ""
 
-#: ../qml/components/DayItem.qml:225 ../qml/pages/MainPage.qml:248
+#: ../qml/components/DayItem.qml:225 ../qml/pages/MainPage.qml:265
 msgid "Feel."
 msgstr ""
 
-#: ../qml/components/DayItem.qml:225 ../qml/pages/MainPage.qml:248
+#: ../qml/components/DayItem.qml:225 ../qml/pages/MainPage.qml:265
 msgid "Temp."
 msgstr ""
 
-#: ../qml/components/DayItem.qml:236 ../qml/pages/MainPage.qml:259
+#: ../qml/components/DayItem.qml:236 ../qml/pages/MainPage.qml:276
 msgid "Precipitation"
 msgstr ""
 
-#: ../qml/components/DayItem.qml:247 ../qml/pages/MainPage.qml:270
+#: ../qml/components/DayItem.qml:247 ../qml/pages/MainPage.qml:287
 msgid "Wind"
 msgstr ""
 
@@ -165,7 +165,7 @@ msgstr ""
 msgid "Satellite"
 msgstr ""
 
-#: ../qml/pages/AboutPage.qml:27 ../qml/pages/MainPage.qml:58
+#: ../qml/pages/AboutPage.qml:27 ../qml/pages/MainPage.qml:71
 msgid "About"
 msgstr ""
 
@@ -189,68 +189,72 @@ msgstr ""
 msgid "API usage"
 msgstr ""
 
-#: ../qml/pages/MainPage.qml:46
+#: ../qml/pages/MainPage.qml:59
 msgid "Location"
 msgstr ""
 
-#: ../qml/pages/MainPage.qml:53 ../qml/pages/SettingsPage.qml:27
+#: ../qml/pages/MainPage.qml:66 ../qml/pages/SettingsPage.qml:27
 msgid "Settings"
 msgstr ""
 
-#: ../qml/pages/MainPage.qml:70
+#: ../qml/pages/MainPage.qml:83
 msgid "Today"
 msgstr ""
 
-#: ../qml/pages/MainPage.qml:73
+#: ../qml/pages/MainPage.qml:86
 msgid "Coming days"
 msgstr ""
 
-#: ../qml/pages/MainPage.qml:147
+#: ../qml/pages/MainPage.qml:164
 msgid "Weather forecast Netherlands"
 msgstr ""
 
-#: ../qml/pages/MainPage.qml:172
+#: ../qml/pages/MainPage.qml:189
 msgid "Read the entire forecast"
 msgstr ""
 
-#: ../qml/pages/MainPage.qml:195
+#: ../qml/pages/MainPage.qml:212
 msgid "Coming hours in"
 msgstr ""
 
-#: ../qml/pages/MainPage.qml:322
+#: ../qml/pages/MainPage.qml:339
 msgid "Show full overview"
 msgstr ""
 
-#: ../qml/pages/MainPage.qml:349
+#: ../qml/pages/MainPage.qml:366
 msgid "Today in"
 msgstr ""
 
-#: ../qml/pages/MainPage.qml:435
+#: ../qml/pages/MainPage.qml:452
 msgid "Air pressure"
 msgstr ""
 
-#: ../qml/pages/MainPage.qml:435
+#: ../qml/pages/MainPage.qml:452
 msgid "Feel temperature"
 msgstr ""
 
-#: ../qml/pages/MainPage.qml:435
+#: ../qml/pages/MainPage.qml:452
 msgid "Ground temperature"
 msgstr ""
 
-#: ../qml/pages/MainPage.qml:435
+#: ../qml/pages/MainPage.qml:452
 msgid "Humidity"
 msgstr ""
 
-#: ../qml/pages/MainPage.qml:435
+#: ../qml/pages/MainPage.qml:452
 msgid "Sun power"
 msgstr ""
 
-#: ../qml/pages/MainPage.qml:435
+#: ../qml/pages/MainPage.qml:452
 msgid "Visibility"
 msgstr ""
 
-#: ../qml/pages/MainPage.qml:435
+#: ../qml/pages/MainPage.qml:452
 msgid "Wind gusts"
+msgstr ""
+
+#: ../qml/pages/MainPage.qml:479
+msgid "Featured weather photos"
 msgstr ""
 
 #: ../qml/pages/SearchPage.qml:44

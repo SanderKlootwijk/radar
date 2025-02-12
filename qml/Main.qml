@@ -53,7 +53,7 @@ MainView {
     }
 
     // Application metadeta
-    property string version: "2.0.0"
+    property string version: "2.1.0"
 
     // Data loading state
     property bool searchLoading: false
@@ -63,7 +63,8 @@ MainView {
     property string locationsSource
     property string forecastSource: "https://forecast.buienradar.nl/2.0/forecast/?lat=" + settings.currentLatitude + "&lon=" + settings.currentLongitude
     property string observationsSource: "https://observations.buienradar.nl/1.0/actual/weatherstation/" + settings.currentWeatherstationID
-    
+    property string featuredPhotosSource: "https://photovideoapi.buienradar.nl/api/Media/featured-photos/"
+
     // Current weather data
     property string currentTemp: "	"
     property string sunrise
@@ -373,6 +374,32 @@ MainView {
         });
     }
 
+    // Fetch featured photos
+    function fetchFeaturedPhotos() {
+        makeRequest({
+            url: featuredPhotosSource,
+            onSuccess: function (responseText) {
+                let list = JSON.parse(responseText);
+
+                mainPage.featuredPhotosListmodel.clear();
+
+                for (let i in list) {
+                    let featuredPhoto = list[i];
+                    mainPage.featuredPhotosListmodel.append({
+                        externalId: featuredPhoto.externalId,
+                        thumbnailUrl: featuredPhoto.thumbnailUrl,
+                        altText: featuredPhoto.altText
+                    });
+                }
+
+                console.log("Featured photos fetched successfully");
+            },
+            onError: function (status, statusText) {
+                console.log("Failed to fetch featured photos:", status, statusText);
+            }
+        });
+    }
+
     // Reload all data
     function reloadData() {
         root.reloading = true;
@@ -380,6 +407,7 @@ MainView {
         fetchForecast();
         fetchPrecipitation();
         fetchObservations();
+        fetchFeaturedPhotos();
 
         weatherModel.reload();
 

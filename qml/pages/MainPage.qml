@@ -15,6 +15,8 @@
  */
 
 import QtQuick 2.7
+import QtQuick.Controls 2.2 as QtControls
+import QtQuick.Controls.Suru 2.2
 import Lomiri.Components 1.3
 import QtQuick.Layouts 1.3
 import "../components"
@@ -30,7 +32,18 @@ Page {
     property alias precipitationChart: precipitationChart
     property alias precipitationListModel: precipitationListModel
     property alias forecastListModel: forecastListModel
+    property alias featuredPhotosListmodel: featuredPhotosListmodel
     property alias hoursListView: hoursListView
+    property alias featuredPhotoPopup: featuredPhotoPopup
+
+    Suru.theme: {
+        switch (settings.theme) {
+            case 0: return;
+            case 1: return Suru.Light;
+            case 2: return Suru.Dark;
+            default: return;
+        }
+    }
 
     header: PageHeader {
         id: mainPageHeader
@@ -90,6 +103,10 @@ Page {
 
     ListModel {
         id: forecastListModel
+    }
+
+    ListModel {
+        id: featuredPhotosListmodel
     }
 
     VisualItemModel {
@@ -453,6 +470,139 @@ Page {
                         width: parent.width
                         height: units.gu(1)
                     }
+
+                    Label {
+                        width: parent.width - units.gu(4)
+
+                        anchors.horizontalCenter: parent.horizontalCenter
+                        
+                        text: i18n.tr("Featured weather photos")
+
+                        elide: Text.ElideRight
+                        font.bold: true
+                    }
+
+                    Item {
+                        id: swipeViewItem
+                        
+                        width: parent.width - units.gu(4)
+                        height: width / 1.5
+
+                        anchors.horizontalCenter: parent.horizontalCenter
+
+                        QtControls.SwipeView{
+                            id: slider
+
+                            anchors.fill: parent
+
+                            clip: true
+                            
+                            Repeater {
+                                model: featuredPhotosListmodel
+
+                                Image {
+                                    width: slider.width
+                                    height: slider.height
+                                    source: "https://storage-eu.newspark.ca/storage/" + externalId + "/100116"
+                                    fillMode: Image.PreserveAspectCrop
+
+                                    MouseArea {
+                                        anchors.fill: parent
+
+                                        onClicked: featuredPhotoPopup.visible = true
+                                    }
+
+                                    ActivityIndicator {
+                                        anchors.centerIn: parent
+                                        visible: parent.progress != 1
+                                        running: true
+                                    }
+                                }
+                            }
+                        }
+
+                        LomiriShape {
+                            width: units.gu(2.5)
+                            height: units.gu(4)
+
+                            anchors {
+                                left: slider.left
+                                leftMargin: units.gu(1)
+                                verticalCenter: slider.verticalCenter
+                            }
+
+                            opacity: slider.currentIndex > 0 ? 1 : 0.5
+                            backgroundColor: "#99000000"
+
+                            Icon {
+                                width: units.gu(2)
+                                height: width
+
+                                anchors.centerIn: parent
+
+                                color: "white"
+
+                                name: "go-previous"
+                            }
+
+                            MouseArea {
+                                anchors.fill: parent
+
+                                onClicked: {
+                                    if (slider.currentIndex > 0) {
+                                        slider.currentIndex = slider.currentIndex - 1
+                                    }
+                                }
+                            }
+                        }
+
+                        LomiriShape {
+                            width: units.gu(2.5)
+                            height: units.gu(4)
+
+                            anchors {
+                                right: slider.right
+                                rightMargin: units.gu(1)
+                                verticalCenter: slider.verticalCenter
+                            }
+
+                            opacity: slider.currentIndex < featuredPhotosListmodel.count - 1 ? 1 : 0.5
+                            backgroundColor: "#99000000"
+
+                            Icon {
+                                width: units.gu(2)
+                                height: width
+
+                                anchors.centerIn: parent
+
+                                color: "white"
+
+                                name: "go-next"
+                            }
+
+                            MouseArea {
+                                anchors.fill: parent
+
+                                onClicked: {
+                                    if (slider.currentIndex < featuredPhotosListmodel.count - 1) {
+                                        slider.currentIndex = slider.currentIndex + 1
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    QtControls.PageIndicator {
+                        anchors.horizontalCenter: parent.horizontalCenter
+
+                        currentIndex: slider.currentIndex
+                        count: slider.count
+                    }
+
+                    Item {
+                        width: parent.width
+                        height: units.gu(1)
+                    }
                 }
             }
         }
@@ -520,5 +670,251 @@ Page {
         onCurrentIndexChanged: mainPageHeaderSections.selectedIndex = currentIndex
 
         clip: true
+    }
+
+    Rectangle {
+        z: 1
+        id: featuredPhotoPopup
+
+        property alias fadeOutTimer: fadeOutTimer
+        property int index: slider.currentIndex
+        property string externalId
+        property string altText
+
+        onIndexChanged: {
+            featuredPhotoPopup.externalId = featuredPhotosListmodel.get(index).externalId
+            featuredPhotoPopup.altText = featuredPhotosListmodel.get(index).altText
+        }
+        
+        visible: false
+
+        onVisibleChanged: {
+            leftNav.visible = true
+            rightNav.visible = true
+            fadeOutTimer.restart()
+        }
+
+        anchors.fill: parent
+
+        color: "black"
+
+        Rectangle {
+            z: 3
+            color: "#99000000"
+
+            width: parent.width
+            height: units.gu(1.85) + units.gu(1.85) + featuredPhotoPopupLabel.implicitHeight
+
+            anchors {
+                top: parent.top
+                horizontalCenter: parent.horizontalCenter
+            }
+
+            Timer {
+                id: fadeOutTimer
+                interval: 3000
+                repeat: false
+                onTriggered: {
+                    leftNav.visible = false
+                    rightNav.visible = false
+                }
+            }
+
+            Icon {
+                id: backIcon
+
+                width: units.gu(2)
+                height: width
+
+                anchors {
+                    left: parent.left
+                    leftMargin: units.gu(2)
+                    top: parent.top
+                    topMargin: units.gu(2)
+                }
+
+                color: "white"
+
+                name: "go-previous"
+            }
+
+            MouseArea {
+                height: parent.height
+                width: height + units.gu(2)
+
+                anchors.centerIn: backIcon
+
+                onClicked: featuredPhotoPopup.visible = false
+            }
+
+            Label {
+                id: featuredPhotoPopupLabel
+
+                width: parent.width - backIcon.width - units.gu(6)
+
+                anchors {
+                    left: backIcon.right
+                    leftMargin: units.gu(2)
+                    top: parent.top
+                    topMargin: units.gu(1.85)
+                }
+                
+                text: featuredPhotoPopup.altText
+
+                wrapMode: Text.WordWrap
+                elide: Text.ElideRight
+                color: "white"
+            }
+        }
+
+        Image {
+            width: parent.width
+            height: parent.height
+
+            anchors.centerIn: parent
+
+            source: "https://storage-eu.newspark.ca/storage/" + featuredPhotoPopup.externalId + "/100116"
+            fillMode: Image.PreserveAspectFit
+
+            ActivityIndicator {
+                anchors.centerIn: parent
+                visible: parent.progress != 1
+                running: true
+            }
+        }
+
+        LomiriShape {
+            z: 1
+            id: leftNav
+            
+            width: units.gu(2.5)
+            height: units.gu(4)
+
+            anchors {
+                left: parent.left
+                leftMargin: units.gu(1)
+                verticalCenter: parent.verticalCenter
+            }
+
+            visible: false
+            backgroundColor: "#99000000"
+
+            states: [
+                State {
+                    when: leftNav.visible
+                    PropertyChanges {
+                        target: leftNav
+                        opacity: slider.currentIndex > 0 ? 1 : 0.5
+                    }
+                },
+                State {
+                    when: !leftNav.visible
+                    PropertyChanges {
+                        target: leftNav
+                        opacity: 0
+                    }
+                }
+            ]
+
+            transitions: [
+                Transition {
+                    NumberAnimation { duration: LomiriAnimation.BriskDuration }
+                }
+            ]
+
+            Icon {
+                width: units.gu(2)
+                height: width
+
+                anchors.centerIn: parent
+
+                color: "white"
+
+                name: "go-previous"
+            }
+
+            MouseArea {
+                anchors.fill: parent
+
+                onClicked: {
+                    if (slider.currentIndex > 0) {
+                        slider.currentIndex = slider.currentIndex - 1
+                    }
+                    fadeOutTimer.restart()
+                }
+            }
+        }
+
+        LomiriShape {
+            z: 1
+            id: rightNav
+            
+            width: units.gu(2.5)
+            height: units.gu(4)
+
+            anchors {
+                right: parent.right
+                rightMargin: units.gu(1)
+                verticalCenter: parent.verticalCenter
+            }
+
+            visible: false
+            backgroundColor: "#99000000"
+
+            states: [
+                State {
+                    when: rightNav.visible
+                    PropertyChanges {
+                        target: rightNav
+                        opacity: slider.currentIndex < featuredPhotosListmodel.count - 1 ? 1 : 0.5
+                    }
+                },
+                State {
+                    when: !rightNav.visible
+                    PropertyChanges {
+                        target: rightNav
+                        opacity: 0
+                    }
+                }
+            ]
+
+            transitions: [
+                Transition {
+                    NumberAnimation { duration: LomiriAnimation.BriskDuration }
+                }
+            ]
+
+            Icon {
+                width: units.gu(2)
+                height: width
+
+                anchors.centerIn: parent
+
+                color: "white"
+
+                name: "go-next"
+            }
+
+            MouseArea {
+                anchors.fill: parent
+
+                onClicked: {
+                    if (slider.currentIndex < featuredPhotosListmodel.count - 1) {
+                        slider.currentIndex = slider.currentIndex + 1
+                    }
+                    fadeOutTimer.restart()
+                }
+            }
+        }
+
+        MouseArea {
+            anchors.fill: parent
+
+            onClicked: {
+                leftNav.visible = true
+                rightNav.visible = true
+                fadeOutTimer.restart()
+            }
+        }
     }
 }

@@ -98,15 +98,15 @@ Item {
             } else if (root.radarType == "rain3Hours") {
                 "https://image.buienradar.nl/2.0/image/animation/RadarMapRainNL?&history=1&forecast=18&skip=1"
             } else if (root.radarType == "rain24Hours") {
-                "http://api.buienradar.nl/image/1.0/24hourforecastmapnl/?ext=gif"
+                "https://image.buienradar.nl/2.0/image/animation/RadarMapRain24HourForecastNL"
             } else if (root.radarType == "drizzle") {
-                "http://api.buienradar.nl/image/1.0/drizzlemapnl/?ext=gif"
+                "https://image.buienradar.nl/2.0/image/animation/RadarMapDrizzleNL"
             } else if (root.radarType == "snow") {
-                "http://api.buienradar.nl/image/1.0/snowmapnl/?ext=gif"
+                "https://image.buienradar.nl/2.0/image/animation/RadarMapSnowNL"
             } else if (root.radarType == "lightning") {
-                "https://api.buienradar.nl/image/1.0/lightningnl/?ext=gif&type=NL"
+                "https://image.buienradar.nl/2.0/image/animation/RadarMapLightningNL"
             } else if (root.radarType == "satellite") {
-                "https://api.buienradar.nl/image/1.0/satvisual/?ext=gif&type=NL"
+                "https://image.buienradar.nl/2.0/image/animation/SatInfraRed"
             }
         }
 
@@ -286,7 +286,11 @@ Item {
             visible: false
             
             color: theme.palette.normal.background
-            text: "+3"
+            
+            Label {
+                anchors.centerIn: parent
+                text: "+3"
+            }
             
             onClicked: {
                 collapseButtons();
@@ -304,7 +308,11 @@ Item {
             visible: false
             
             color: theme.palette.normal.background
-            text: "+24"
+            
+            Label {
+                anchors.centerIn: parent
+                text: "+24"
+            }
             
             onClicked: {
                 collapseButtons();
@@ -320,7 +328,12 @@ Item {
             height: units.gu(5)
             
             color: theme.palette.normal.activity
-            text: root.precipitationFor24Hours ? "+24" : "+3"
+
+            Label {
+                anchors.centerIn: parent
+                text: root.precipitationFor24Hours ? "+24" : "+3"
+                color: theme.palette.normal.negativeText
+            }
             
             onClicked: {
                 radarOptionSelector.currentlyExpanded = false;

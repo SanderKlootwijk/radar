@@ -18,6 +18,7 @@
 #include <QCoreApplication>
 #include <QUrl>
 #include <QString>
+#include <QtQuickControls2/QQuickStyle>
 #include <QQuickView>
 
 int main(int argc, char *argv[])
@@ -28,6 +29,7 @@ int main(int argc, char *argv[])
 
     qDebug() << "Starting app from main.cpp";
 
+    QQuickStyle::setStyle("Suru");
     QQuickView *view = new QQuickView();
     view->setSource(QUrl("qrc:/Main.qml"));
     view->setResizeMode(QQuickView::SizeRootObjectToView);
