@@ -56,7 +56,7 @@ Item {
         
         settings.showScrollBars: false
         
-        zoomFactor: 0.01446 * (radarPaintedImage.width / units.gu(1)) + 0.015
+        zoomFactor: (units.gu(1) / 8) * (0.01446 * (radarPaintedImage.width / units.gu(1)) + 0.015)
 
         profile: WebEngineProfile {
             id: webContext
