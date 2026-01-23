@@ -9,7 +9,7 @@
             "desktop":  "radar.desktop"
         }
     },
-    "version": "2.1.0",
+    "version": "2.1.1",
     "maintainer": "Sander Klootwijk <sander.klootwijk@tutanota.com>",
     "framework" : "@CLICK_FRAMEWORK@"
 }
