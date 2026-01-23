@@ -411,7 +411,7 @@ MainView {
 
         weatherModel.reload();
 
-        mainPage.radarItem.webEngineView.url = "https://gadgets.buienradar.nl/gadget/zoommap/?lat=" + settings.currentLatitude + "&lng=" + settings.currentLongitude + "&overname=2&zoom=13&size=3&voor=1";
+        mainPage.radarItem.webEngineView.url = "https://gadgets.buienradar.nl/gadget/zoommap/?lat=" + settings.currentLatitude + "&lng=" + settings.currentLongitude + "&overname=2&zoom=13&size=3&voor=0";
         
         Qt.callLater(() => {
             root.reloading = false;
