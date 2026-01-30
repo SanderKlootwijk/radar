@@ -54,7 +54,7 @@ MainView {
     }
 
     // Application metadeta
-    property string version: "2.1.1"
+    property string version: "2.2.0"
 
     // Data loading state
     property bool searchLoading: false
