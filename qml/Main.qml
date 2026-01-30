@@ -16,6 +16,7 @@
 
 import QtQuick 2.7
 import Lomiri.Components 1.3
+import Lomiri.Components.Popups 1.3
 import Lomiri.Connectivity 1.0
 import QtQuick.Layouts 1.3
 import Qt.labs.settings 1.0
@@ -146,6 +147,14 @@ MainView {
             anchors.fill: parent
         }
 
+        GpsPage {
+            id: gpsPage
+
+            visible: false
+
+            anchors.fill: parent
+        }
+
         SettingsPage {
             id: settingsPage
 
@@ -239,6 +248,52 @@ MainView {
             onError: function (status, statusText) {
                 console.log("Failed to fetch locations:", status, statusText);
                 root.searchLoading = false;
+            }
+        });
+    }
+
+    // Fetch location using latitude and longitude
+    function fetchLocationByLatLon(lat,lon) {
+        makeRequest({
+            url: "https://location.buienradar.nl/1.1/location/geo?lat=" + lat + "&lon=" + lon,
+            retries: 3,
+            retryDelay: 1000,
+            onSuccess: function (responseText) {
+                let data = JSON.parse(responseText);
+
+                if (data.countrycode === "NL") {
+                    settings.currentLatitude = Number(data.location.lat);
+                    settings.currentLongitude = Number(data.location.lon);
+                    settings.currentLocationName = data.name;
+                    settings.currentWeatherstationID = data.weatherstationid;
+
+                    reloadData();
+
+                    mainPage.todayFlickable.contentY = 0;
+                    mainPage.forecastListView.expandedIndex = -1;
+                    mainPage.comingdaysFlickable.contentY = 0;
+
+                    mainPage.radarItem.collapseButtons();
+                    mainPage.radarItem.radarOptionSelector.currentlyExpanded = false;
+                    mainPage.radarItem.webEngineView.visible = false;
+
+                    // Pop GPS page and search page
+                    pageStack.pop();
+                    pageStack.pop();
+
+                    searchPage.searchField.text = null;
+                    searchPage.searchField.searchExecuted = false;
+                    
+                    locationsListModel.clear();
+                    
+                    console.log("Location fetched using latitude and longitude successfully");
+                } else {
+                    PopupUtils.open(gpsPage.locationDialogComponent);
+                    console.log("Location is not in the Netherlands, won't set location");
+                }
+            },
+            onError: function (status, statusText) {
+                console.log("Failed to fetch location using latitude and longitude:", status, statusText);
             }
         });
     }

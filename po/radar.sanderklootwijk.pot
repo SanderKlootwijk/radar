@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: radar.sanderklootwijk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-12 15:05+0000\n"
+"POT-Creation-Date: 2026-01-30 21:50+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,111 +17,111 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../qml/Main.qml:79 ../qml/pages/MainPage.qml:225
+#: ../qml/Main.qml:80 ../qml/pages/MainPage.qml:225
 msgid "Loading..."
 msgstr ""
 
-#: ../qml/Main.qml:255
+#: ../qml/Main.qml:310
 msgid "Fri"
 msgstr ""
 
-#: ../qml/Main.qml:255
+#: ../qml/Main.qml:310
 msgid "Mon"
 msgstr ""
 
-#: ../qml/Main.qml:255
+#: ../qml/Main.qml:310
 msgid "Sat"
 msgstr ""
 
-#: ../qml/Main.qml:255
+#: ../qml/Main.qml:310
 msgid "Sun"
 msgstr ""
 
-#: ../qml/Main.qml:255
+#: ../qml/Main.qml:310
 msgid "Thu"
 msgstr ""
 
-#: ../qml/Main.qml:255
+#: ../qml/Main.qml:310
 msgid "Tue"
 msgstr ""
 
-#: ../qml/Main.qml:255
+#: ../qml/Main.qml:310
 msgid "Wed"
 msgstr ""
 
-#: ../qml/Main.qml:257
+#: ../qml/Main.qml:312
 msgid "Friday"
 msgstr ""
 
-#: ../qml/Main.qml:257
+#: ../qml/Main.qml:312
 msgid "Monday"
 msgstr ""
 
-#: ../qml/Main.qml:257
+#: ../qml/Main.qml:312
 msgid "Saturday"
 msgstr ""
 
-#: ../qml/Main.qml:257
+#: ../qml/Main.qml:312
 msgid "Sunday"
 msgstr ""
 
-#: ../qml/Main.qml:257
+#: ../qml/Main.qml:312
 msgid "Thursday"
 msgstr ""
 
-#: ../qml/Main.qml:257
+#: ../qml/Main.qml:312
 msgid "Tuesday"
 msgstr ""
 
-#: ../qml/Main.qml:257
+#: ../qml/Main.qml:312
 msgid "Wednesday"
 msgstr ""
 
-#: ../qml/Main.qml:258
+#: ../qml/Main.qml:313
 msgid "April"
 msgstr ""
 
-#: ../qml/Main.qml:258
+#: ../qml/Main.qml:313
 msgid "August"
 msgstr ""
 
-#: ../qml/Main.qml:258
+#: ../qml/Main.qml:313
 msgid "December"
 msgstr ""
 
-#: ../qml/Main.qml:258
+#: ../qml/Main.qml:313
 msgid "February"
 msgstr ""
 
-#: ../qml/Main.qml:258
+#: ../qml/Main.qml:313
 msgid "January"
 msgstr ""
 
-#: ../qml/Main.qml:258
+#: ../qml/Main.qml:313
 msgid "July"
 msgstr ""
 
-#: ../qml/Main.qml:258
+#: ../qml/Main.qml:313
 msgid "June"
 msgstr ""
 
-#: ../qml/Main.qml:258
+#: ../qml/Main.qml:313
 msgid "March"
 msgstr ""
 
-#: ../qml/Main.qml:258
+#: ../qml/Main.qml:313
 msgid "May"
 msgstr ""
 
-#: ../qml/Main.qml:258
+#: ../qml/Main.qml:313
 msgid "November"
 msgstr ""
 
-#: ../qml/Main.qml:258
+#: ../qml/Main.qml:313
 msgid "October"
 msgstr ""
 
-#: ../qml/Main.qml:258
+#: ../qml/Main.qml:313
 msgid "September"
 msgstr ""
 
@@ -187,6 +187,33 @@ msgstr ""
 
 #: ../qml/pages/AboutPage.qml:135
 msgid "API usage"
+msgstr ""
+
+#: ../qml/pages/GpsPage.qml:35 ../qml/pages/SearchPage.qml:171
+msgid "Current location"
+msgstr ""
+
+#: ../qml/pages/GpsPage.qml:43 ../qml/pages/GpsPage.qml:76
+#: ../qml/pages/GpsPage.qml:103 ../qml/pages/GpsPage.qml:136
+msgid "Waiting for GPS signal..."
+msgstr ""
+
+#: ../qml/pages/GpsPage.qml:117
+msgid "This could take a while..."
+msgstr ""
+
+#: ../qml/pages/GpsPage.qml:127
+msgid "Location not supported"
+msgstr ""
+
+#: ../qml/pages/GpsPage.qml:128
+msgid ""
+"This app only supports locations within the Netherlands. Please try again or "
+"use the search function to look up a location."
+msgstr ""
+
+#: ../qml/pages/GpsPage.qml:131
+msgid "Close"
 msgstr ""
 
 #: ../qml/pages/MainPage.qml:59

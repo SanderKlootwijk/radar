@@ -132,6 +132,54 @@ Page {
             
             width: parent.width
 
+            ListItem {
+                id: gpsItem
+
+                width: parent.width
+                height: gpsLabel.implicitHeight + units.gu(5)
+
+                visible: !root.searchLoading
+
+                Icon {
+                    id: gpsIcon
+
+                    height: units.gu(2.5)
+                    width: units.gu(2.5)
+
+                    name: 'gps'
+                    color: theme.palette.normal.foregroundText
+                    
+                    anchors {
+                        verticalCenter: parent.verticalCenter
+                        left: parent.left
+                        leftMargin: units.gu(2)
+                    }
+                }
+
+                Label {
+                    id: gpsLabel
+                    
+                    width: parent.width - gpsIcon.width - units.gu(6)
+                    
+                    anchors {
+                        left: gpsIcon.right
+                        leftMargin: units.gu(2)
+                        top: parent.top
+                        topMargin: units.gu(2.5)
+                    }
+                    
+                    text: i18n.tr("Current location")
+
+                    elide: Text.ElideRight
+                }
+
+                onClicked: {
+                    searchPage.pageStack.push(gpsPage)
+                    gpsPage.gpsLabelTimer.start()
+                    gpsPage.positionSource.active = true
+                }
+            }
+
             Repeater {
                 id: locationListView
 

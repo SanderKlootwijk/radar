@@ -58,6 +58,7 @@
         <file>icons/ww.png</file>
         <file>js/theme.js</file>
         <file>pages/AboutPage.qml</file>
+        <file>pages/GpsPage.qml</file>
         <file>pages/MainPage.qml</file>
         <file>pages/SearchPage.qml</file>
         <file>pages/SettingsPage.qml</file>
