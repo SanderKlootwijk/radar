@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: radar.sanderklootwijk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-12 15:05+0000\n"
-"PO-Revision-Date: 2025-02-12 16:32+0100\n"
+"POT-Creation-Date: 2026-01-30 21:57+0000\n"
+"PO-Revision-Date: 2026-01-30 23:01+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -18,127 +18,127 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 3.4.2\n"
 
-#: ../qml/Main.qml:79 ../qml/pages/MainPage.qml:225
+#: ../qml/Main.qml:80 ../qml/pages/MainPage.qml:220
 msgid "Loading..."
 msgstr "Laden..."
 
-#: ../qml/Main.qml:255
+#: ../qml/Main.qml:310
 msgid "Fri"
 msgstr "Vr"
 
-#: ../qml/Main.qml:255
+#: ../qml/Main.qml:310
 msgid "Mon"
 msgstr "Ma"
 
-#: ../qml/Main.qml:255
+#: ../qml/Main.qml:310
 msgid "Sat"
 msgstr "Za"
 
-#: ../qml/Main.qml:255
+#: ../qml/Main.qml:310
 msgid "Sun"
 msgstr "Zo"
 
-#: ../qml/Main.qml:255
+#: ../qml/Main.qml:310
 msgid "Thu"
 msgstr "Do"
 
-#: ../qml/Main.qml:255
+#: ../qml/Main.qml:310
 msgid "Tue"
 msgstr "Di"
 
-#: ../qml/Main.qml:255
+#: ../qml/Main.qml:310
 msgid "Wed"
 msgstr "Wo"
 
-#: ../qml/Main.qml:257
+#: ../qml/Main.qml:312
 msgid "Friday"
 msgstr "Vrijdag"
 
-#: ../qml/Main.qml:257
+#: ../qml/Main.qml:312
 msgid "Monday"
 msgstr "Maandag"
 
-#: ../qml/Main.qml:257
+#: ../qml/Main.qml:312
 msgid "Saturday"
 msgstr "Zaterdag"
 
-#: ../qml/Main.qml:257
+#: ../qml/Main.qml:312
 msgid "Sunday"
 msgstr "Zondag"
 
-#: ../qml/Main.qml:257
+#: ../qml/Main.qml:312
 msgid "Thursday"
 msgstr "Donderdag"
 
-#: ../qml/Main.qml:257
+#: ../qml/Main.qml:312
 msgid "Tuesday"
 msgstr "Dinsdag"
 
-#: ../qml/Main.qml:257
+#: ../qml/Main.qml:312
 msgid "Wednesday"
 msgstr "Woensdag"
 
-#: ../qml/Main.qml:258
+#: ../qml/Main.qml:313
 msgid "April"
 msgstr "april"
 
-#: ../qml/Main.qml:258
+#: ../qml/Main.qml:313
 msgid "August"
 msgstr "augustus"
 
-#: ../qml/Main.qml:258
+#: ../qml/Main.qml:313
 msgid "December"
 msgstr "december"
 
-#: ../qml/Main.qml:258
+#: ../qml/Main.qml:313
 msgid "February"
 msgstr "februari"
 
-#: ../qml/Main.qml:258
+#: ../qml/Main.qml:313
 msgid "January"
 msgstr "januari"
 
-#: ../qml/Main.qml:258
+#: ../qml/Main.qml:313
 msgid "July"
 msgstr "juli"
 
-#: ../qml/Main.qml:258
+#: ../qml/Main.qml:313
 msgid "June"
 msgstr "juni"
 
-#: ../qml/Main.qml:258
+#: ../qml/Main.qml:313
 msgid "March"
 msgstr "maart"
 
-#: ../qml/Main.qml:258
+#: ../qml/Main.qml:313
 msgid "May"
 msgstr "mei"
 
-#: ../qml/Main.qml:258
+#: ../qml/Main.qml:313
 msgid "November"
 msgstr "november"
 
-#: ../qml/Main.qml:258
+#: ../qml/Main.qml:313
 msgid "October"
 msgstr "oktober"
 
-#: ../qml/Main.qml:258
+#: ../qml/Main.qml:313
 msgid "September"
 msgstr "september"
 
-#: ../qml/components/DayItem.qml:225 ../qml/pages/MainPage.qml:265
+#: ../qml/components/DayItem.qml:225 ../qml/pages/MainPage.qml:260
 msgid "Feel."
 msgstr "Gevoel."
 
-#: ../qml/components/DayItem.qml:225 ../qml/pages/MainPage.qml:265
+#: ../qml/components/DayItem.qml:225 ../qml/pages/MainPage.qml:260
 msgid "Temp."
 msgstr "Temp."
 
-#: ../qml/components/DayItem.qml:236 ../qml/pages/MainPage.qml:276
+#: ../qml/components/DayItem.qml:236 ../qml/pages/MainPage.qml:271
 msgid "Precipitation"
 msgstr "Neerslag"
 
-#: ../qml/components/DayItem.qml:247 ../qml/pages/MainPage.qml:287
+#: ../qml/components/DayItem.qml:247 ../qml/pages/MainPage.qml:282
 msgid "Wind"
 msgstr "Wind"
 
@@ -166,7 +166,7 @@ msgstr "Onweer"
 msgid "Satellite"
 msgstr "Satelliet"
 
-#: ../qml/pages/AboutPage.qml:27 ../qml/pages/MainPage.qml:71
+#: ../qml/pages/AboutPage.qml:27 ../qml/pages/SettingsPage.qml:125
 msgid "About"
 msgstr "Over"
 
@@ -190,71 +190,100 @@ msgstr "Meld problemen"
 msgid "API usage"
 msgstr "API gebruik"
 
-#: ../qml/pages/MainPage.qml:59
-msgid "Location"
-msgstr "Locatie"
+#: ../qml/pages/GpsPage.qml:35 ../qml/pages/SearchPage.qml:171
+msgid "Current location"
+msgstr "Huidige locatie"
 
-#: ../qml/pages/MainPage.qml:66 ../qml/pages/SettingsPage.qml:27
+#: ../qml/pages/GpsPage.qml:43 ../qml/pages/GpsPage.qml:76
+#: ../qml/pages/GpsPage.qml:103 ../qml/pages/GpsPage.qml:136
+msgid "Waiting for GPS signal..."
+msgstr "Wachten op GPS-signaal..."
+
+#: ../qml/pages/GpsPage.qml:117
+msgid "This could take a while..."
+msgstr "Dit kan even duren..."
+
+#: ../qml/pages/GpsPage.qml:127
+msgid "Location not supported"
+msgstr "Locatie niet ondersteund"
+
+#: ../qml/pages/GpsPage.qml:128
+msgid ""
+"This app only supports locations within the Netherlands. Please try again or "
+"use the search function to look up a location."
+msgstr ""
+"Deze app ondersteunt alleen locaties binnen Nederland. Probeer het opnieuw "
+"of gebruik de zoekfunctie om een locatie op te zoeken."
+
+#: ../qml/pages/GpsPage.qml:131
+msgid "Close"
+msgstr "Sluiten"
+
+#: ../qml/pages/MainPage.qml:59 ../qml/pages/SettingsPage.qml:27
 msgid "Settings"
 msgstr "Instellingen"
 
-#: ../qml/pages/MainPage.qml:83
+#: ../qml/pages/MainPage.qml:64
+msgid "Location"
+msgstr "Locatie"
+
+#: ../qml/pages/MainPage.qml:78
 msgid "Today"
 msgstr "Vandaag"
 
-#: ../qml/pages/MainPage.qml:86
+#: ../qml/pages/MainPage.qml:81
 msgid "Coming days"
 msgstr "Komende dagen"
 
-#: ../qml/pages/MainPage.qml:164
+#: ../qml/pages/MainPage.qml:159
 msgid "Weather forecast Netherlands"
 msgstr "Weerbericht Nederland"
 
-#: ../qml/pages/MainPage.qml:189
+#: ../qml/pages/MainPage.qml:184
 msgid "Read the entire forecast"
 msgstr "Lees het volledige weerbericht"
 
-#: ../qml/pages/MainPage.qml:212
+#: ../qml/pages/MainPage.qml:207
 msgid "Coming hours in"
 msgstr "Komende uren in"
 
-#: ../qml/pages/MainPage.qml:339
+#: ../qml/pages/MainPage.qml:334
 msgid "Show full overview"
 msgstr "Bekijk het volledige overzicht"
 
-#: ../qml/pages/MainPage.qml:366
+#: ../qml/pages/MainPage.qml:361
 msgid "Today in"
 msgstr "Vandaag in"
 
-#: ../qml/pages/MainPage.qml:452
+#: ../qml/pages/MainPage.qml:447
 msgid "Air pressure"
 msgstr "Luchtdruk"
 
-#: ../qml/pages/MainPage.qml:452
+#: ../qml/pages/MainPage.qml:447
 msgid "Feel temperature"
 msgstr "Gevoelstemperatuur"
 
-#: ../qml/pages/MainPage.qml:452
+#: ../qml/pages/MainPage.qml:447
 msgid "Ground temperature"
 msgstr "Grondtemperatuur"
 
-#: ../qml/pages/MainPage.qml:452
+#: ../qml/pages/MainPage.qml:447
 msgid "Humidity"
 msgstr "Luchtvochtigheid"
 
-#: ../qml/pages/MainPage.qml:452
+#: ../qml/pages/MainPage.qml:447
 msgid "Sun power"
 msgstr "Zonintensiteit"
 
-#: ../qml/pages/MainPage.qml:452
+#: ../qml/pages/MainPage.qml:447
 msgid "Visibility"
 msgstr "Zicht"
 
-#: ../qml/pages/MainPage.qml:452
+#: ../qml/pages/MainPage.qml:447
 msgid "Wind gusts"
 msgstr "Windstoten"
 
-#: ../qml/pages/MainPage.qml:479
+#: ../qml/pages/MainPage.qml:474
 msgid "Featured weather photos"
 msgstr "Uitgelichte weerfoto's"
 
@@ -266,10 +295,14 @@ msgstr "Zoek naar een locatie"
 msgid "No locations found"
 msgstr "Geen locaties gevonden"
 
-#: ../qml/pages/SettingsPage.qml:74
+#: ../qml/pages/SettingsPage.qml:73
 msgid "Theme"
 msgstr "Thema"
 
-#: ../qml/pages/SettingsPage.qml:95
+#: ../qml/pages/SettingsPage.qml:97
 msgid "System"
 msgstr "Systeem"
+
+#: ../qml/pages/SettingsPage.qml:143
+msgid "About this app"
+msgstr "Over deze app"
