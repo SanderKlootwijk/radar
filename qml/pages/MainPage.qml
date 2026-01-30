@@ -56,21 +56,16 @@ Page {
 
             actions: [
                 Action {
-                    text: i18n.tr("Location")
-                    iconName: "location"
-                    onTriggered: {
-                        pageStack.push(searchPage)
-                    }
-                },
-                Action {
                     text: i18n.tr("Settings")
                     iconName: "settings"
                     onTriggered: pageStack.push(settingsPage)
                 },
                 Action {
-                    text: i18n.tr("About")
-                    iconName: "info"
-                    onTriggered: pageStack.push(aboutPage)
+                    text: i18n.tr("Location")
+                    iconName: "location"
+                    onTriggered: {
+                        pageStack.push(searchPage)
+                    }
                 }
             ]
         }

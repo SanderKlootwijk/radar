@@ -61,7 +61,6 @@ Page {
 
                 Label {
                     id: themeTitleLabel
-                    
                     width: parent.width - units.gu(4)
 
                     anchors {
@@ -73,6 +72,8 @@ Page {
                     
                     text: i18n.tr("Theme") + ":"
 
+                    color: theme.palette.normal.backgroundSecondaryText
+                    font.bold: true
                     elide: Text.ElideRight
                 }
             }
@@ -80,7 +81,7 @@ Page {
             ListItem {
                 id: themeListItem
 
-                height: themeOptionSelector.height + units.gu(2)
+                height: themeOptionSelector.height + units.gu(4)
 
                 OptionSelector {
                     id: themeOptionSelector
@@ -90,6 +91,7 @@ Page {
                     anchors {
                         horizontalCenter: parent.horizontalCenter
                         top: parent.top
+                        topMargin: units.gu(2)
                     }
 
                     model: [i18n.tr("System"), "Ambiance", "Suru Dark"]
@@ -97,7 +99,52 @@ Page {
                     onSelectedIndexChanged: settings.theme = selectedIndex
 
                     Component.onCompleted: selectedIndex = settings.theme
+                }   
+            }
+
+            ListItem {
+                id: aboutTitle
+
+                height: units.gu(6.25)
+
+                divider.colorFrom: theme.palette.normal.background
+                divider.colorTo: theme.palette.normal.background
+
+                Label {
+                    id: aboutTitleLabel
+
+                    width: parent.width - units.gu(4)
+
+                    anchors {
+                        bottom: parent.bottom
+                        bottomMargin: units.gu(1.25)
+                        left: parent.left
+                        leftMargin: units.gu(2)
+                    }
+
+                    text: i18n.tr("About") + ":"
+
+                    color: theme.palette.normal.backgroundSecondaryText
+                    elide: Text.ElideRight
+                    font.bold: true
                 }
+            }
+
+            ListItem {
+                id: aboutListItem
+
+                height: units.gu(6)
+
+                ListItemLayout {
+                    id: layoutAbout
+
+                    anchors.verticalCenter: parent.verticalCenter
+
+                    title.text : i18n.tr("About this app")
+                    ProgressionSlot { color: theme.palette.normal.baseText; }
+                }
+
+                onClicked: pageStack.push(aboutPage)
             }
         }
     }
