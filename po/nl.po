@@ -3,24 +3,25 @@
 # This file is distributed under the same license as the radar.sanderklootwijk package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: radar.sanderklootwijk\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-01-30 21:57+0000\n"
-"PO-Revision-Date: 2026-01-30 23:01+0100\n"
-"Last-Translator: \n"
-"Language-Team: \n"
+"PO-Revision-Date: 2026-04-03 09:09+0000\n"
+"Last-Translator: Heimen Stoffels <vistausss@fastmail.com>\n"
+"Language-Team: Dutch <https://hosted.weblate.org/projects/ubports/app-radar/"
+"nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.4.2\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.17-dev\n"
 
 #: ../qml/Main.qml:80 ../qml/pages/MainPage.qml:220
 msgid "Loading..."
-msgstr "Laden..."
+msgstr "Bezig met laden…"
 
 #: ../qml/Main.qml:310
 msgid "Fri"
@@ -188,7 +189,7 @@ msgstr "Meld problemen"
 
 #: ../qml/pages/AboutPage.qml:135
 msgid "API usage"
-msgstr "API gebruik"
+msgstr "API-gebruik"
 
 #: ../qml/pages/GpsPage.qml:35 ../qml/pages/SearchPage.qml:171
 msgid "Current location"
@@ -197,11 +198,11 @@ msgstr "Huidige locatie"
 #: ../qml/pages/GpsPage.qml:43 ../qml/pages/GpsPage.qml:76
 #: ../qml/pages/GpsPage.qml:103 ../qml/pages/GpsPage.qml:136
 msgid "Waiting for GPS signal..."
-msgstr "Wachten op GPS-signaal..."
+msgstr "Wachten op GPS-signaal…"
 
 #: ../qml/pages/GpsPage.qml:117
 msgid "This could take a while..."
-msgstr "Dit kan even duren..."
+msgstr "Dit kan even duren…"
 
 #: ../qml/pages/GpsPage.qml:127
 msgid "Location not supported"
