@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: radar.sanderklootwijk\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-01-30 21:57+0000\n"
-"PO-Revision-Date: 2026-04-03 09:09+0000\n"
+"PO-Revision-Date: 2026-04-06 16:54+0000\n"
 "Last-Translator: Heimen Stoffels <vistausss@fastmail.com>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/ubports/app-radar/"
 "nl/>\n"
@@ -294,7 +294,7 @@ msgstr "Zoek naar een locatie"
 
 #: ../qml/pages/SearchPage.qml:110
 msgid "No locations found"
-msgstr "Geen locaties gevonden"
+msgstr "Er zijn geen locaties aangetroffen"
 
 #: ../qml/pages/SettingsPage.qml:73
 msgid "Theme"
