@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: radar.sanderklootwijk\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-01-30 21:57+0000\n"
-"PO-Revision-Date: 2026-04-10 20:09+0000\n"
+"PO-Revision-Date: 2026-04-16 18:11+0000\n"
 "Last-Translator: Serhii Horichenko <serhii@horichenko.com>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/ubports/app-"
 "radar/uk/>\n"
@@ -18,206 +18,208 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Weblate 5.17-dev\n"
+"X-Generator: Weblate 5.17.1-dev\n"
 
 #: ../qml/Main.qml:80 ../qml/pages/MainPage.qml:220
 msgid "Loading..."
-msgstr ""
+msgstr "Завантажується..."
 
 #: ../qml/Main.qml:310
 msgid "Fri"
-msgstr ""
+msgstr "Пт"
 
 #: ../qml/Main.qml:310
 msgid "Mon"
-msgstr ""
+msgstr "Пн"
 
 #: ../qml/Main.qml:310
 msgid "Sat"
-msgstr ""
+msgstr "Сб"
 
 #: ../qml/Main.qml:310
 msgid "Sun"
-msgstr ""
+msgstr "Нд"
 
 #: ../qml/Main.qml:310
 msgid "Thu"
-msgstr ""
+msgstr "Чт"
 
 #: ../qml/Main.qml:310
 msgid "Tue"
-msgstr ""
+msgstr "Вт"
 
 #: ../qml/Main.qml:310
 msgid "Wed"
-msgstr ""
+msgstr "Ср"
 
 #: ../qml/Main.qml:312
 msgid "Friday"
-msgstr ""
+msgstr "П'ятниця"
 
 #: ../qml/Main.qml:312
 msgid "Monday"
-msgstr ""
+msgstr "Понеділок"
 
 #: ../qml/Main.qml:312
 msgid "Saturday"
-msgstr ""
+msgstr "Субота"
 
 #: ../qml/Main.qml:312
 msgid "Sunday"
-msgstr ""
+msgstr "Неділя"
 
 #: ../qml/Main.qml:312
 msgid "Thursday"
-msgstr ""
+msgstr "Четвер"
 
 #: ../qml/Main.qml:312
 msgid "Tuesday"
-msgstr ""
+msgstr "Вівторок"
 
 #: ../qml/Main.qml:312
 msgid "Wednesday"
-msgstr ""
+msgstr "Середа"
 
 #: ../qml/Main.qml:313
 msgid "April"
-msgstr ""
+msgstr "Квітень"
 
 #: ../qml/Main.qml:313
 msgid "August"
-msgstr ""
+msgstr "Серпень"
 
 #: ../qml/Main.qml:313
 msgid "December"
-msgstr ""
+msgstr "Грудень"
 
 #: ../qml/Main.qml:313
 msgid "February"
-msgstr ""
+msgstr "Лютий"
 
 #: ../qml/Main.qml:313
 msgid "January"
-msgstr ""
+msgstr "Січень"
 
 #: ../qml/Main.qml:313
 msgid "July"
-msgstr ""
+msgstr "Липень"
 
 #: ../qml/Main.qml:313
 msgid "June"
-msgstr ""
+msgstr "Червень"
 
 #: ../qml/Main.qml:313
 msgid "March"
-msgstr ""
+msgstr "Березень"
 
 #: ../qml/Main.qml:313
 msgid "May"
-msgstr ""
+msgstr "Травень"
 
 #: ../qml/Main.qml:313
 msgid "November"
-msgstr ""
+msgstr "Листопад"
 
 #: ../qml/Main.qml:313
 msgid "October"
-msgstr ""
+msgstr "Жовтень"
 
 #: ../qml/Main.qml:313
 msgid "September"
-msgstr ""
+msgstr "Вересень"
 
 #: ../qml/components/DayItem.qml:225 ../qml/pages/MainPage.qml:260
 msgid "Feel."
-msgstr ""
+msgstr "Відч."
 
 #: ../qml/components/DayItem.qml:225 ../qml/pages/MainPage.qml:260
 msgid "Temp."
-msgstr ""
+msgstr "Темп."
 
 #: ../qml/components/DayItem.qml:236 ../qml/pages/MainPage.qml:271
 msgid "Precipitation"
-msgstr ""
+msgstr "Опади"
 
 #: ../qml/components/DayItem.qml:247 ../qml/pages/MainPage.qml:282
 msgid "Wind"
-msgstr ""
+msgstr "Вітер"
 
 #: ../qml/components/PrecipitationChart.qml:148
 msgid "No precipitation expected"
-msgstr ""
+msgstr "Опади не очікуються"
 
 #: ../qml/components/Radar.qml:222
 msgid "Rain"
-msgstr ""
+msgstr "Дощ"
 
 #: ../qml/components/Radar.qml:223
 msgid "Drizzle"
-msgstr ""
+msgstr "Дрібний дощ"
 
 #: ../qml/components/Radar.qml:224
 msgid "Snow"
-msgstr ""
+msgstr "Сніг"
 
 #: ../qml/components/Radar.qml:225
 msgid "Lightning"
-msgstr ""
+msgstr "Блискавка"
 
 #: ../qml/components/Radar.qml:226
 msgid "Satellite"
-msgstr ""
+msgstr "Супутник"
 
 #: ../qml/pages/AboutPage.qml:27 ../qml/pages/SettingsPage.qml:125
 msgid "About"
-msgstr ""
+msgstr "Інфо"
 
 #: ../qml/pages/AboutPage.qml:82 radar.desktop.in.h:1
 msgid "Radar"
-msgstr ""
+msgstr "Radar"
 
 #: ../qml/pages/AboutPage.qml:87
 msgid "Version"
-msgstr ""
+msgstr "Версія"
 
 #: ../qml/pages/AboutPage.qml:105
 msgid "Source code"
-msgstr ""
+msgstr "Початковий код"
 
 #: ../qml/pages/AboutPage.qml:106
 msgid "Report issues"
-msgstr ""
+msgstr "Повідомити про проблему"
 
 #: ../qml/pages/AboutPage.qml:135
 msgid "API usage"
-msgstr ""
+msgstr "Використання API"
 
 #: ../qml/pages/GpsPage.qml:35 ../qml/pages/SearchPage.qml:171
 msgid "Current location"
-msgstr ""
+msgstr "Поточне розташування"
 
 #: ../qml/pages/GpsPage.qml:43 ../qml/pages/GpsPage.qml:76
 #: ../qml/pages/GpsPage.qml:103 ../qml/pages/GpsPage.qml:136
 msgid "Waiting for GPS signal..."
-msgstr ""
+msgstr "Очікування сигналу GPS..."
 
 #: ../qml/pages/GpsPage.qml:117
 msgid "This could take a while..."
-msgstr ""
+msgstr "Це може трохи тривати..."
 
 #: ../qml/pages/GpsPage.qml:127
 msgid "Location not supported"
-msgstr ""
+msgstr "Розташування не підтримується"
 
 #: ../qml/pages/GpsPage.qml:128
 msgid ""
 "This app only supports locations within the Netherlands. Please try again or "
 "use the search function to look up a location."
 msgstr ""
+"Ця програма підтримує розташування лише у Нідерландах. Спробуйте ще раз або "
+"скористайтеся пошуком розташування."
 
 #: ../qml/pages/GpsPage.qml:131
 msgid "Close"
-msgstr ""
+msgstr "Закрити"
 
 #: ../qml/pages/MainPage.qml:59 ../qml/pages/SettingsPage.qml:27
 msgid "Settings"
@@ -225,84 +227,84 @@ msgstr "Налаштування"
 
 #: ../qml/pages/MainPage.qml:64
 msgid "Location"
-msgstr ""
+msgstr "Розташування"
 
 #: ../qml/pages/MainPage.qml:78
 msgid "Today"
-msgstr ""
+msgstr "Сьогодні"
 
 #: ../qml/pages/MainPage.qml:81
 msgid "Coming days"
-msgstr ""
+msgstr "Найближчі дні"
 
 #: ../qml/pages/MainPage.qml:159
 msgid "Weather forecast Netherlands"
-msgstr ""
+msgstr "Прогноз погоди у Нідерландах"
 
 #: ../qml/pages/MainPage.qml:184
 msgid "Read the entire forecast"
-msgstr ""
+msgstr "Повний прогноз"
 
 #: ../qml/pages/MainPage.qml:207
 msgid "Coming hours in"
-msgstr ""
+msgstr "Найближчі години"
 
 #: ../qml/pages/MainPage.qml:334
 msgid "Show full overview"
-msgstr ""
+msgstr "Перегляд повного огляду"
 
 #: ../qml/pages/MainPage.qml:361
 msgid "Today in"
-msgstr ""
+msgstr "Сьогодні"
 
 #: ../qml/pages/MainPage.qml:447
 msgid "Air pressure"
-msgstr ""
+msgstr "Атмосферний тиск"
 
 #: ../qml/pages/MainPage.qml:447
 msgid "Feel temperature"
-msgstr ""
+msgstr "Температура за відчуттям"
 
 #: ../qml/pages/MainPage.qml:447
 msgid "Ground temperature"
-msgstr ""
+msgstr "Температура грунту"
 
 #: ../qml/pages/MainPage.qml:447
 msgid "Humidity"
-msgstr ""
+msgstr "Вологість"
 
 #: ../qml/pages/MainPage.qml:447
 msgid "Sun power"
-msgstr ""
+msgstr "Сонячна енергія"
 
 #: ../qml/pages/MainPage.qml:447
 msgid "Visibility"
-msgstr ""
+msgstr "Видимість"
 
 #: ../qml/pages/MainPage.qml:447
 msgid "Wind gusts"
-msgstr ""
+msgstr "Пориви вітру"
 
 #: ../qml/pages/MainPage.qml:474
 msgid "Featured weather photos"
-msgstr ""
+msgstr "Рекомендовані фотографії погоди"
 
 #: ../qml/pages/SearchPage.qml:44
 msgid "Search for a location"
-msgstr ""
+msgstr "Пошук розташування"
 
 #: ../qml/pages/SearchPage.qml:110
 msgid "No locations found"
-msgstr ""
+msgstr "Розташування не знайдено"
 
 #: ../qml/pages/SettingsPage.qml:73
 msgid "Theme"
-msgstr ""
+msgstr "Тема"
 
 #: ../qml/pages/SettingsPage.qml:97
 msgid "System"
-msgstr ""
+msgstr "Система"
 
 #: ../qml/pages/SettingsPage.qml:143
 msgid "About this app"
-msgstr ""
+msgstr "Про цю програму"
