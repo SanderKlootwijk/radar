@@ -8,46 +8,48 @@ msgstr ""
 "Project-Id-Version: radar.sanderklootwijk\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-01-30 21:57+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-04-17 04:38+0000\n"
+"Last-Translator: Andi Chandler <andi@gowling.com>\n"
+"Language-Team: English (United Kingdom) <https://hosted.weblate.org/projects/"
+"ubports/app-radar/en_GB/>\n"
 "Language: en_GB\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.17.1-dev\n"
 
 #: ../qml/Main.qml:80 ../qml/pages/MainPage.qml:220
 msgid "Loading..."
-msgstr ""
+msgstr "Loading..."
 
 #: ../qml/Main.qml:310
 msgid "Fri"
-msgstr ""
+msgstr "Fri"
 
 #: ../qml/Main.qml:310
 msgid "Mon"
-msgstr ""
+msgstr "Mon"
 
 #: ../qml/Main.qml:310
 msgid "Sat"
-msgstr ""
+msgstr "Sat"
 
 #: ../qml/Main.qml:310
 msgid "Sun"
-msgstr ""
+msgstr "Sun"
 
 #: ../qml/Main.qml:310
 msgid "Thu"
-msgstr ""
+msgstr "Thu"
 
 #: ../qml/Main.qml:310
 msgid "Tue"
-msgstr ""
+msgstr "Tue"
 
 #: ../qml/Main.qml:310
 msgid "Wed"
-msgstr ""
+msgstr "Wed"
 
 #: ../qml/Main.qml:312
 msgid "Friday"
