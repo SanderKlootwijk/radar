@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: radar.sanderklootwijk\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-01-30 21:57+0000\n"
-"PO-Revision-Date: 2026-04-27 15:52+0000\n"
+"PO-Revision-Date: 2026-04-30 12:09+0000\n"
 "Last-Translator: Andi Chandler <andi@gowling.com>\n"
 "Language-Team: English (United Kingdom) <https://hosted.weblate.org/projects/"
 "ubports/app-radar/en_GB/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.17.1-dev\n"
+"X-Generator: Weblate 5.17.1\n"
 
 #: ../qml/Main.qml:80 ../qml/pages/MainPage.qml:220
 msgid "Loading..."
@@ -177,15 +177,15 @@ msgstr ""
 
 #: ../qml/pages/AboutPage.qml:87
 msgid "Version"
-msgstr ""
+msgstr "Version"
 
 #: ../qml/pages/AboutPage.qml:105
 msgid "Source code"
-msgstr ""
+msgstr "Source code"
 
 #: ../qml/pages/AboutPage.qml:106
 msgid "Report issues"
-msgstr ""
+msgstr "Report issues"
 
 #: ../qml/pages/AboutPage.qml:135
 msgid "API usage"
@@ -216,7 +216,7 @@ msgstr ""
 
 #: ../qml/pages/GpsPage.qml:131
 msgid "Close"
-msgstr ""
+msgstr "Close"
 
 #: ../qml/pages/MainPage.qml:59 ../qml/pages/SettingsPage.qml:27
 msgid "Settings"
