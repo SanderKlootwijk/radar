@@ -8,122 +8,124 @@ msgstr ""
 "Project-Id-Version: radar.sanderklootwijk\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-01-30 21:57+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-07-21 19:01+0000\n"
+"Last-Translator: Ettore Atalan <atalanttore@googlemail.com>\n"
+"Language-Team: German <https://hosted.weblate.org/projects/ubports/app-radar/"
+"de/>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2026.8.dev0\n"
 
 #: ../qml/Main.qml:80 ../qml/pages/MainPage.qml:220
 msgid "Loading..."
-msgstr ""
+msgstr "Wird geladen ..."
 
 #: ../qml/Main.qml:310
 msgid "Fri"
-msgstr ""
+msgstr "Fr"
 
 #: ../qml/Main.qml:310
 msgid "Mon"
-msgstr ""
+msgstr "Mo"
 
 #: ../qml/Main.qml:310
 msgid "Sat"
-msgstr ""
+msgstr "Sa"
 
 #: ../qml/Main.qml:310
 msgid "Sun"
-msgstr ""
+msgstr "So"
 
 #: ../qml/Main.qml:310
 msgid "Thu"
-msgstr ""
+msgstr "Do"
 
 #: ../qml/Main.qml:310
 msgid "Tue"
-msgstr ""
+msgstr "Di"
 
 #: ../qml/Main.qml:310
 msgid "Wed"
-msgstr ""
+msgstr "Mi"
 
 #: ../qml/Main.qml:312
 msgid "Friday"
-msgstr ""
+msgstr "Freitag"
 
 #: ../qml/Main.qml:312
 msgid "Monday"
-msgstr ""
+msgstr "Montag"
 
 #: ../qml/Main.qml:312
 msgid "Saturday"
-msgstr ""
+msgstr "Samstag"
 
 #: ../qml/Main.qml:312
 msgid "Sunday"
-msgstr ""
+msgstr "Sonntag"
 
 #: ../qml/Main.qml:312
 msgid "Thursday"
-msgstr ""
+msgstr "Donnerstag"
 
 #: ../qml/Main.qml:312
 msgid "Tuesday"
-msgstr ""
+msgstr "Dienstag"
 
 #: ../qml/Main.qml:312
 msgid "Wednesday"
-msgstr ""
+msgstr "Mittwoch"
 
 #: ../qml/Main.qml:313
 msgid "April"
-msgstr ""
+msgstr "April"
 
 #: ../qml/Main.qml:313
 msgid "August"
-msgstr ""
+msgstr "August"
 
 #: ../qml/Main.qml:313
 msgid "December"
-msgstr ""
+msgstr "Dezember"
 
 #: ../qml/Main.qml:313
 msgid "February"
-msgstr ""
+msgstr "Februar"
 
 #: ../qml/Main.qml:313
 msgid "January"
-msgstr ""
+msgstr "Januar"
 
 #: ../qml/Main.qml:313
 msgid "July"
-msgstr ""
+msgstr "Juli"
 
 #: ../qml/Main.qml:313
 msgid "June"
-msgstr ""
+msgstr "Juni"
 
 #: ../qml/Main.qml:313
 msgid "March"
-msgstr ""
+msgstr "März"
 
 #: ../qml/Main.qml:313
 msgid "May"
-msgstr ""
+msgstr "Mai"
 
 #: ../qml/Main.qml:313
 msgid "November"
-msgstr ""
+msgstr "November"
 
 #: ../qml/Main.qml:313
 msgid "October"
-msgstr ""
+msgstr "Oktober"
 
 #: ../qml/Main.qml:313
 msgid "September"
-msgstr ""
+msgstr "September"
 
 #: ../qml/components/DayItem.qml:225 ../qml/pages/MainPage.qml:260
 msgid "Feel."
@@ -131,67 +133,67 @@ msgstr ""
 
 #: ../qml/components/DayItem.qml:225 ../qml/pages/MainPage.qml:260
 msgid "Temp."
-msgstr ""
+msgstr "Temp."
 
 #: ../qml/components/DayItem.qml:236 ../qml/pages/MainPage.qml:271
 msgid "Precipitation"
-msgstr ""
+msgstr "Niederschlag"
 
 #: ../qml/components/DayItem.qml:247 ../qml/pages/MainPage.qml:282
 msgid "Wind"
-msgstr ""
+msgstr "Wind"
 
 #: ../qml/components/PrecipitationChart.qml:148
 msgid "No precipitation expected"
-msgstr ""
+msgstr "Kein Niederschlag erwartet"
 
 #: ../qml/components/Radar.qml:222
 msgid "Rain"
-msgstr ""
+msgstr "Regen"
 
 #: ../qml/components/Radar.qml:223
 msgid "Drizzle"
-msgstr ""
+msgstr "Nieselregen"
 
 #: ../qml/components/Radar.qml:224
 msgid "Snow"
-msgstr ""
+msgstr "Schnee"
 
 #: ../qml/components/Radar.qml:225
 msgid "Lightning"
-msgstr ""
+msgstr "Blitz"
 
 #: ../qml/components/Radar.qml:226
 msgid "Satellite"
-msgstr ""
+msgstr "Satellit"
 
 #: ../qml/pages/AboutPage.qml:27 ../qml/pages/SettingsPage.qml:125
 msgid "About"
-msgstr ""
+msgstr "Über"
 
 #: ../qml/pages/AboutPage.qml:82 radar.desktop.in.h:1
 msgid "Radar"
-msgstr ""
+msgstr "Radar"
 
 #: ../qml/pages/AboutPage.qml:87
 msgid "Version"
-msgstr ""
+msgstr "Version"
 
 #: ../qml/pages/AboutPage.qml:105
 msgid "Source code"
-msgstr ""
+msgstr "Quellcode"
 
 #: ../qml/pages/AboutPage.qml:106
 msgid "Report issues"
-msgstr ""
+msgstr "Probleme melden"
 
 #: ../qml/pages/AboutPage.qml:135
 msgid "API usage"
-msgstr ""
+msgstr "API-Nutzung"
 
 #: ../qml/pages/GpsPage.qml:35 ../qml/pages/SearchPage.qml:171
 msgid "Current location"
-msgstr ""
+msgstr "Aktueller Standort"
 
 #: ../qml/pages/GpsPage.qml:43 ../qml/pages/GpsPage.qml:76
 #: ../qml/pages/GpsPage.qml:103 ../qml/pages/GpsPage.qml:136
@@ -214,27 +216,27 @@ msgstr ""
 
 #: ../qml/pages/GpsPage.qml:131
 msgid "Close"
-msgstr ""
+msgstr "Schließen"
 
 #: ../qml/pages/MainPage.qml:59 ../qml/pages/SettingsPage.qml:27
 msgid "Settings"
-msgstr ""
+msgstr "Einstellungen"
 
 #: ../qml/pages/MainPage.qml:64
 msgid "Location"
-msgstr ""
+msgstr "Standort"
 
 #: ../qml/pages/MainPage.qml:78
 msgid "Today"
-msgstr ""
+msgstr "Heute"
 
 #: ../qml/pages/MainPage.qml:81
 msgid "Coming days"
-msgstr ""
+msgstr "In den kommenden Tagen"
 
 #: ../qml/pages/MainPage.qml:159
 msgid "Weather forecast Netherlands"
-msgstr ""
+msgstr "Wettervorhersage für die Niederlande"
 
 #: ../qml/pages/MainPage.qml:184
 msgid "Read the entire forecast"
@@ -250,35 +252,35 @@ msgstr ""
 
 #: ../qml/pages/MainPage.qml:361
 msgid "Today in"
-msgstr ""
+msgstr "Heute in"
 
 #: ../qml/pages/MainPage.qml:447
 msgid "Air pressure"
-msgstr ""
+msgstr "Luftdruck"
 
 #: ../qml/pages/MainPage.qml:447
 msgid "Feel temperature"
-msgstr ""
+msgstr "Gefühlte Temperatur"
 
 #: ../qml/pages/MainPage.qml:447
 msgid "Ground temperature"
-msgstr ""
+msgstr "Bodentemperatur"
 
 #: ../qml/pages/MainPage.qml:447
 msgid "Humidity"
-msgstr ""
+msgstr "Luftfeuchtigkeit"
 
 #: ../qml/pages/MainPage.qml:447
 msgid "Sun power"
-msgstr ""
+msgstr "Sonnenenergie"
 
 #: ../qml/pages/MainPage.qml:447
 msgid "Visibility"
-msgstr ""
+msgstr "Sichtbarkeit"
 
 #: ../qml/pages/MainPage.qml:447
 msgid "Wind gusts"
-msgstr ""
+msgstr "Windböen"
 
 #: ../qml/pages/MainPage.qml:474
 msgid "Featured weather photos"
@@ -298,8 +300,8 @@ msgstr ""
 
 #: ../qml/pages/SettingsPage.qml:97
 msgid "System"
-msgstr ""
+msgstr "System"
 
 #: ../qml/pages/SettingsPage.qml:143
 msgid "About this app"
-msgstr ""
+msgstr "Über diese App"
