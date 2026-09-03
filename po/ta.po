@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: radar.sanderklootwijk\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-01-30 21:57+0000\n"
-"PO-Revision-Date: 2026-08-31 09:56+0000\n"
+"PO-Revision-Date: 2026-09-04 05:51+0000\n"
 "Last-Translator: Alagirisamy Rengaraj <radhaalagirisamy@gmail.com>\n"
 "Language-Team: Tamil <https://hosted.weblate.org/projects/ubports/app-radar/"
 "ta/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2026.9.dev0\n"
+"X-Generator: Weblate 2026.9\n"
 
 #: ../qml/Main.qml:80 ../qml/pages/MainPage.qml:220
 msgid "Loading..."
@@ -216,7 +216,7 @@ msgstr ""
 
 #: ../qml/pages/GpsPage.qml:131
 msgid "Close"
-msgstr ""
+msgstr "மூடு"
 
 #: ../qml/pages/MainPage.qml:59 ../qml/pages/SettingsPage.qml:27
 msgid "Settings"
@@ -296,11 +296,11 @@ msgstr ""
 
 #: ../qml/pages/SettingsPage.qml:73
 msgid "Theme"
-msgstr ""
+msgstr "கருப்பொருள்"
 
 #: ../qml/pages/SettingsPage.qml:97
 msgid "System"
-msgstr ""
+msgstr "கணினி"
 
 #: ../qml/pages/SettingsPage.qml:143
 msgid "About this app"
