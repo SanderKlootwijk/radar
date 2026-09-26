@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: radar.sanderklootwijk\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-01-30 21:57+0000\n"
-"PO-Revision-Date: 2026-09-26 03:41+0000\n"
+"PO-Revision-Date: 2026-09-27 16:51+0000\n"
 "Last-Translator: Alagirisamy Rengaraj <radhaalagirisamy@gmail.com>\n"
 "Language-Team: Tamil <https://hosted.weblate.org/projects/ubports/app-radar/"
 "ta/>\n"
@@ -224,11 +224,11 @@ msgstr "அமைப்புகள்"
 
 #: ../qml/pages/MainPage.qml:64
 msgid "Location"
-msgstr ""
+msgstr "இடம்"
 
 #: ../qml/pages/MainPage.qml:78
 msgid "Today"
-msgstr ""
+msgstr "இன்று"
 
 #: ../qml/pages/MainPage.qml:81
 msgid "Coming days"
