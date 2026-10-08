@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: radar.sanderklootwijk\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-01-30 21:57+0000\n"
-"PO-Revision-Date: 2026-09-27 16:51+0000\n"
+"PO-Revision-Date: 2026-10-09 02:14+0000\n"
 "Last-Translator: Alagirisamy Rengaraj <radhaalagirisamy@gmail.com>\n"
 "Language-Team: Tamil <https://hosted.weblate.org/projects/ubports/app-radar/"
 "ta/>\n"
@@ -17,155 +17,155 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2026.10.dev0\n"
+"X-Generator: Weblate 2026.10.1.dev0\n"
 
 #: ../qml/Main.qml:80 ../qml/pages/MainPage.qml:220
 msgid "Loading..."
-msgstr ""
+msgstr "ஏற்றுகிறது..."
 
 #: ../qml/Main.qml:310
 msgid "Fri"
-msgstr ""
+msgstr "வெள்ளி"
 
 #: ../qml/Main.qml:310
 msgid "Mon"
-msgstr ""
+msgstr "திங்கள்"
 
 #: ../qml/Main.qml:310
 msgid "Sat"
-msgstr ""
+msgstr "சனி"
 
 #: ../qml/Main.qml:310
 msgid "Sun"
-msgstr ""
+msgstr "ஞாயிறு"
 
 #: ../qml/Main.qml:310
 msgid "Thu"
-msgstr ""
+msgstr "வியாழன்"
 
 #: ../qml/Main.qml:310
 msgid "Tue"
-msgstr ""
+msgstr "செவ்வாய்"
 
 #: ../qml/Main.qml:310
 msgid "Wed"
-msgstr ""
+msgstr "புதன்"
 
 #: ../qml/Main.qml:312
 msgid "Friday"
-msgstr ""
+msgstr "வெள்ளிக்கிழமை"
 
 #: ../qml/Main.qml:312
 msgid "Monday"
-msgstr ""
+msgstr "திங்கள் கிழமை"
 
 #: ../qml/Main.qml:312
 msgid "Saturday"
-msgstr ""
+msgstr "சனிக்கிழமை"
 
 #: ../qml/Main.qml:312
 msgid "Sunday"
-msgstr ""
+msgstr "ஞாயிற்றுக்கிழமை"
 
 #: ../qml/Main.qml:312
 msgid "Thursday"
-msgstr ""
+msgstr "வியாழக்கிழமை"
 
 #: ../qml/Main.qml:312
 msgid "Tuesday"
-msgstr ""
+msgstr "செவ்வாய்க்கிழமை"
 
 #: ../qml/Main.qml:312
 msgid "Wednesday"
-msgstr ""
+msgstr "புதன்கிழமை"
 
 #: ../qml/Main.qml:313
 msgid "April"
-msgstr ""
+msgstr "ஏப்ரல்"
 
 #: ../qml/Main.qml:313
 msgid "August"
-msgstr ""
+msgstr "ஆகசுட்டு"
 
 #: ../qml/Main.qml:313
 msgid "December"
-msgstr ""
+msgstr "டிசம்பர்"
 
 #: ../qml/Main.qml:313
 msgid "February"
-msgstr ""
+msgstr "பிப்ரவரி"
 
 #: ../qml/Main.qml:313
 msgid "January"
-msgstr ""
+msgstr "சனவரி"
 
 #: ../qml/Main.qml:313
 msgid "July"
-msgstr ""
+msgstr "சூலை"
 
 #: ../qml/Main.qml:313
 msgid "June"
-msgstr ""
+msgstr "சூன்"
 
 #: ../qml/Main.qml:313
 msgid "March"
-msgstr ""
+msgstr "மார்ச்"
 
 #: ../qml/Main.qml:313
 msgid "May"
-msgstr ""
+msgstr "மே"
 
 #: ../qml/Main.qml:313
 msgid "November"
-msgstr ""
+msgstr "நவம்பர்"
 
 #: ../qml/Main.qml:313
 msgid "October"
-msgstr ""
+msgstr "அக்டோபர்"
 
 #: ../qml/Main.qml:313
 msgid "September"
-msgstr ""
+msgstr "செப்டெம்பர்"
 
 #: ../qml/components/DayItem.qml:225 ../qml/pages/MainPage.qml:260
 msgid "Feel."
-msgstr ""
+msgstr "உணர்."
 
 #: ../qml/components/DayItem.qml:225 ../qml/pages/MainPage.qml:260
 msgid "Temp."
-msgstr ""
+msgstr "வெப்பநிலை."
 
 #: ../qml/components/DayItem.qml:236 ../qml/pages/MainPage.qml:271
 msgid "Precipitation"
-msgstr ""
+msgstr "பொழிவு"
 
 #: ../qml/components/DayItem.qml:247 ../qml/pages/MainPage.qml:282
 msgid "Wind"
-msgstr ""
+msgstr "காற்று"
 
 #: ../qml/components/PrecipitationChart.qml:148
 msgid "No precipitation expected"
-msgstr ""
+msgstr "பொழிவு எதுவும் எதிர் பார்க்கவில்லை"
 
 #: ../qml/components/Radar.qml:222
 msgid "Rain"
-msgstr ""
+msgstr "மழை"
 
 #: ../qml/components/Radar.qml:223
 msgid "Drizzle"
-msgstr ""
+msgstr "தூவாணம்"
 
 #: ../qml/components/Radar.qml:224
 msgid "Snow"
-msgstr ""
+msgstr "பனி"
 
 #: ../qml/components/Radar.qml:225
 msgid "Lightning"
-msgstr ""
+msgstr "மின்னல்"
 
 #: ../qml/components/Radar.qml:226
 msgid "Satellite"
-msgstr ""
+msgstr "செயற்கைக் கோள்"
 
 #: ../qml/pages/AboutPage.qml:27 ../qml/pages/SettingsPage.qml:125
 msgid "About"
@@ -173,7 +173,7 @@ msgstr "பற்றி"
 
 #: ../qml/pages/AboutPage.qml:82 radar.desktop.in.h:1
 msgid "Radar"
-msgstr ""
+msgstr "ரேடார்"
 
 #: ../qml/pages/AboutPage.qml:87
 msgid "Version"
@@ -189,30 +189,33 @@ msgstr "சிக்கல்களைப் புகாரளிக்கவ�
 
 #: ../qml/pages/AboutPage.qml:135
 msgid "API usage"
-msgstr ""
+msgstr "செ.நி.இ(செயலி நிரலாக்க இடைமுகம்)(API )பயன்பாடு"
 
 #: ../qml/pages/GpsPage.qml:35 ../qml/pages/SearchPage.qml:171
 msgid "Current location"
-msgstr ""
+msgstr "நடப்பு இருப்பிடம்"
 
 #: ../qml/pages/GpsPage.qml:43 ../qml/pages/GpsPage.qml:76
 #: ../qml/pages/GpsPage.qml:103 ../qml/pages/GpsPage.qml:136
 msgid "Waiting for GPS signal..."
 msgstr ""
+"உ.பு.அ (உலகளாவிய புவிநிலைகாட்டி அமைப்பு)(GPS)சமிக்ஞைக்காக காத்திருப்பு..."
 
 #: ../qml/pages/GpsPage.qml:117
 msgid "This could take a while..."
-msgstr ""
+msgstr "இது சிறிது நேரம் எடுக்கலாம்..."
 
 #: ../qml/pages/GpsPage.qml:127
 msgid "Location not supported"
-msgstr ""
+msgstr "இருப்பிடம் ஆதரிக்கப்படவில்லை"
 
 #: ../qml/pages/GpsPage.qml:128
 msgid ""
 "This app only supports locations within the Netherlands. Please try again or "
 "use the search function to look up a location."
 msgstr ""
+"இந்த செயலி நெதர்லாண்ட்சு உள்ளே உள்ள இருப்பிடங்களை மட்டுமே ஆதரிக்கிறது,தயவு செய்து மீண்டும் "
+"முயற்சிக்கவும் அல்லது தேடுதல் அம்சத்தை பயன்படுத்தி ஒரு இருப்பிடத்தை தேடவும்."
 
 #: ../qml/pages/GpsPage.qml:131
 msgid "Close"
@@ -224,7 +227,7 @@ msgstr "அமைப்புகள்"
 
 #: ../qml/pages/MainPage.qml:64
 msgid "Location"
-msgstr "இடம்"
+msgstr "இருப்பிடம்"
 
 #: ../qml/pages/MainPage.qml:78
 msgid "Today"
@@ -232,67 +235,67 @@ msgstr "இன்று"
 
 #: ../qml/pages/MainPage.qml:81
 msgid "Coming days"
-msgstr ""
+msgstr "வரும் நாட்கள்"
 
 #: ../qml/pages/MainPage.qml:159
 msgid "Weather forecast Netherlands"
-msgstr ""
+msgstr "நெதர்லாண்ட்சு காலநிலை முன்னறிவிப்பு"
 
 #: ../qml/pages/MainPage.qml:184
 msgid "Read the entire forecast"
-msgstr ""
+msgstr "முன்னறிவிப்பு முழுவதையும் வாசிக்கவும்"
 
 #: ../qml/pages/MainPage.qml:207
 msgid "Coming hours in"
-msgstr ""
+msgstr "வரும் மணிநேரங்களில்"
 
 #: ../qml/pages/MainPage.qml:334
 msgid "Show full overview"
-msgstr ""
+msgstr "முழு மேலோட்டத்தையும் காட்டு"
 
 #: ../qml/pages/MainPage.qml:361
 msgid "Today in"
-msgstr ""
+msgstr "இன்றைய"
 
 #: ../qml/pages/MainPage.qml:447
 msgid "Air pressure"
-msgstr ""
+msgstr "காற்று அழுத்தம்"
 
 #: ../qml/pages/MainPage.qml:447
 msgid "Feel temperature"
-msgstr ""
+msgstr "உணரும் வெப்பநிலை"
 
 #: ../qml/pages/MainPage.qml:447
 msgid "Ground temperature"
-msgstr ""
+msgstr "தரை வெப்பநிலை"
 
 #: ../qml/pages/MainPage.qml:447
 msgid "Humidity"
-msgstr ""
+msgstr "ஈரப்பதம்"
 
 #: ../qml/pages/MainPage.qml:447
 msgid "Sun power"
-msgstr ""
+msgstr "சூரிய ஆற்றல்"
 
 #: ../qml/pages/MainPage.qml:447
 msgid "Visibility"
-msgstr ""
+msgstr "காணும் தன்மை"
 
 #: ../qml/pages/MainPage.qml:447
 msgid "Wind gusts"
-msgstr ""
+msgstr "திடீர் காற்று வீச்சு"
 
 #: ../qml/pages/MainPage.qml:474
 msgid "Featured weather photos"
-msgstr ""
+msgstr "முக்கியமான வானிலை ஒளிப்படங்கள்"
 
 #: ../qml/pages/SearchPage.qml:44
 msgid "Search for a location"
-msgstr ""
+msgstr "ஒரு இருப்பிடத்தை தேடவும்"
 
 #: ../qml/pages/SearchPage.qml:110
 msgid "No locations found"
-msgstr ""
+msgstr "இருப்பிடம் எதுவும் காணப்படவில்லை"
 
 #: ../qml/pages/SettingsPage.qml:73
 msgid "Theme"
@@ -304,4 +307,4 @@ msgstr "கணினி அமைப்பு"
 
 #: ../qml/pages/SettingsPage.qml:143
 msgid "About this app"
-msgstr ""
+msgstr "இந்த செயலி குறித்து"
